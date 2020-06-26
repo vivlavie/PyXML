@@ -1,0 +1,3952 @@
+{
+   "formats": [
+      {
+         "childtype": "SubElementAvailability",
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "Text"
+            }
+         ],
+         "formatname": "Availability",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "Text"
+            }
+         ],
+         "formatname": "DEFAULT",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "Text"
+            }
+         ],
+         "formatname": "Dependencies",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*}"
+      },
+      {
+         "childtype": "DependentSCE",
+         "fields": [
+            {
+               "fieldname": "DepSCEName",
+               "fieldtype": "InternalLink"
+            },
+            {
+               "fieldname": "DepDescription",
+               "fieldtype": "Text"
+            }
+         ],
+         "formathtml": true,
+         "formatname": "DependentSCE",
+         "outputlines": [
+            "SCE: {*DepSCEName*}",
+            "Dependency: {*DepDescription*}"
+         ],
+         "spacebetween": false,
+         "tables": true,
+         "titleline": "{*DepSCEName*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "SCEID",
+               "fieldtype": "Numbering",
+               "format": "SCE01"
+            },
+            {
+               "fieldname": "Name",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Goal",
+               "fieldtype": "Text"
+            }
+         ],
+         "formatname": "Element",
+         "icon": "book_3",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*SCEID*} {*Name*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "Ref",
+               "fieldtype": "Numbering",
+               "format": "F1"
+            },
+            {
+               "fieldname": "Function",
+               "fieldtype": "Text"
+            },
+            {
+               "fieldname": "Criteria",
+               "fieldtype": "Text"
+            },
+            {
+               "fieldname": "Assurance",
+               "fieldtype": "Text"
+            },
+            {
+               "fieldname": "Verification",
+               "fieldtype": "Text"
+            }
+         ],
+         "formathtml": true,
+         "formatname": "FunctionalRequirement",
+         "outputlines": [
+            "Ref: {*Ref*}",
+            "Function: {*Function*}",
+            "Crierion: {*Criteria*}",
+            "Assurance: {*Assurance*}",
+            "Verification: {*Verification*}"
+         ],
+         "spacebetween": false,
+         "tables": true,
+         "titleline": "{*Ref*} {*Function*}"
+      },
+      {
+         "childtype": "FunctionalRequirement",
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "Text"
+            }
+         ],
+         "formatname": "Functionality",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "InternalLink"
+            }
+         ],
+         "formatname": "LinkToReference",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "SurvID",
+               "fieldtype": "Numbering",
+               "format": "S1"
+            },
+            {
+               "fieldname": "SubElement",
+               "fieldtype": "InternalLink"
+            },
+            {
+               "fieldname": "MAH",
+               "fieldtype": "Text"
+            },
+            {
+               "fieldname": "SurvCriterion",
+               "fieldtype": "Text"
+            },
+            {
+               "fieldname": "SurvAssurance",
+               "fieldtype": "Text"
+            },
+            {
+               "fieldname": "SurvVerification",
+               "fieldtype": "Text"
+            }
+         ],
+         "formathtml": true,
+         "formatname": "MAHSurvivability",
+         "outputlines": [
+            "ID: {*SurvID*}",
+            "Sub-Element: {*SubElement*}",
+            "MAH: {*MAH*}",
+            "Criterion: {*SurvCriterion*}",
+            "Assurance: {*SurvAssurance*}",
+            "Verification: {*SurvVerification*}"
+         ],
+         "spacebetween": false,
+         "tables": true,
+         "titleline": "{*SurvID*} {*SurvCriterion*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "ID",
+               "fieldtype": "Numbering",
+               "format": "[1]"
+            },
+            {
+               "fieldname": "AUTHOR",
+               "fieldtype": "Text"
+            },
+            {
+               "fieldname": "DOCNO",
+               "fieldtype": "Text"
+            },
+            {
+               "fieldname": "REV",
+               "fieldtype": "Text"
+            },
+            {
+               "fieldname": "TITLE",
+               "fieldtype": "Text"
+            },
+            {
+               "fieldname": "Link",
+               "fieldtype": "ExternalLink"
+            }
+         ],
+         "formathtml": true,
+         "formatname": "Reference",
+         "icon": "doc",
+         "outputlines": [
+            "ID: {*ID*}",
+            "DOCNO: {*DOCNO*}",
+            "REV: {*REV*}",
+            "TITLE: {*TITLE*}",
+            "LINK: {*Link*}"
+         ],
+         "spacebetween": false,
+         "tables": true,
+         "titleline": "{*TITLE*}"
+      },
+      {
+         "childtype": "LinkToReference",
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "Text"
+            }
+         ],
+         "formatname": "ReferenceList",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*}"
+      },
+      {
+         "bullets": true,
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Boundary",
+               "fieldtype": "Text"
+            }
+         ],
+         "formathtml": true,
+         "formatname": "SubElement",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "AvID",
+               "fieldtype": "Numbering",
+               "format": "A1"
+            },
+            {
+               "fieldname": "SubElement",
+               "fieldtype": "InternalLink"
+            },
+            {
+               "fieldname": "AvailabilityCriterion",
+               "fieldtype": "Text"
+            },
+            {
+               "fieldname": "AvailabiltyAssurance",
+               "fieldtype": "Text"
+            },
+            {
+               "fieldname": "AvailabilityVerification",
+               "fieldtype": "Text"
+            }
+         ],
+         "formathtml": true,
+         "formatname": "SubElementAvailability",
+         "outputlines": [
+            "ID: {*AvID*}",
+            "Sub-Element: {*SubElement*}",
+            "Criterion: {*AvailabilityCriterion*}",
+            "Assurance: {*AvailabiltyAssurance*}",
+            "Verification: {*AvailabilityVerification*}"
+         ],
+         "spacebetween": false,
+         "tables": true,
+         "titleline": "{*AvID*} {*AvailabilityCriterion*}"
+      },
+      {
+         "childtype": "SubElement",
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "Text"
+            }
+         ],
+         "formatname": "SubElements",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*}"
+      },
+      {
+         "childtype": "MAHSurvivability",
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "Text"
+            }
+         ],
+         "formatname": "Survivability",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*}"
+      }
+   ],
+   "nodes": [
+      {
+         "children": [],
+         "data": {
+            "MAH": "Flooding",
+            "SubElement": "<a href=\"#c4831781b69e11eaab3e185680f895c0\">Flooding Alarm</a>",
+            "SurvCriterion": "Void spaces which are regarded as buoyancy volumes shall be provided with means for checking water tightness e.g. leak detection. ",
+            "SurvID": "6.2"
+         },
+         "format": "MAHSurvivability",
+         "uid": "005719b4b75411ea8ead185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#62811e8db52911eaa673185680f89476\">Technical Full Specification for Hull</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "028ee055b75511ea9d7c185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "6.3",
+            "AvailabilityCriterion": "Two sets of ballast pumps are provided. Ballast piping shall be two (2) main line and two(2) cross connection. And design of ballast piping (port and starboard) shall be separated. Each ballast pump shall be able to take suction and strip from any ballast tank and discharge ballast directly overboard. Ballast water can be transferred from a water ballast tank in port side to a water ballast tank in starboard side and vice versa.",
+            "AvailabiltyAssurance": "Class verificaiton",
+            "SubElement": "<a href=\"#c483177bb69e11eab8f4185680f895c0\">Ballast Water Ringmain and Pump</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "03adac0cb75311eaa81d185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#60328709b52411ea924f185680f89476\">Fire Integrity Drawing for Topsides</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "046b5152b6a811ea8247185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#f28c8f78b52511ea9132185680f89476\">Fire Protection Design Basis</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "0945689eb6a811eaabf8185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-INH-0004</span></span>",
+            "ID": "34",
+            "REV": "C",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Fire &amp; Gas System Philosophy</span></span>"
+         },
+         "format": "Reference",
+         "uid": "0a684b25b52511ea933a185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRL-0001</span></span>",
+            "ID": "90",
+            "REV": "",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Process Design Basis</span></span>"
+         },
+         "format": "Reference",
+         "uid": "0abafdf6b52511eaadff185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRL-0002</span></span>",
+            "ID": "91",
+            "REV": "C2",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Process Design Criteria</span></span>"
+         },
+         "format": "Reference",
+         "uid": "0adeb2a5b52511eab955185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRL-0003</span></span>",
+            "ID": "89",
+            "REV": "B",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Process Description</span></span>"
+         },
+         "format": "Reference",
+         "uid": "0afb1545b52511ea8893185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRL-0004</span></span>",
+            "ID": "112",
+            "REV": "B",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Utility Description</span></span>"
+         },
+         "format": "Reference",
+         "uid": "0b179da7b52511ea8b75185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRH-0002</span></span>",
+            "ID": "76",
+            "REV": "B",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Operating and Control Philosophy</span></span>"
+         },
+         "format": "Reference",
+         "uid": "0b3277cbb52511ea8954185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRH-0004</span></span>",
+            "ID": "41",
+            "REV": "C2",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Flare, Vent and Blowdown Philosophy</span></span>"
+         },
+         "format": "Reference",
+         "uid": "0b4ba64db52511ea9b8b185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRH-0005</span></span>",
+            "ID": "20",
+            "REV": "C",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Emergency Shutdown Philosophy</span></span>"
+         },
+         "format": "Reference",
+         "uid": "0b5c4848b52511eaa489185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRH-0006</span></span>",
+            "ID": "66",
+            "REV": "C",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Isolation Philosophy</span></span>"
+         },
+         "format": "Reference",
+         "uid": "0b7accd5b52511eabeed185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRR-0011</span></span>",
+            "ID": "40",
+            "REV": "A",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Flare and Blowdown Report</span></span>"
+         },
+         "format": "Reference",
+         "uid": "0b9b4e37b52511ea866e185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#62811e8db52911eaa673185680f89476\">Technical Full Specification for Hull</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "0bcf2529b75511ea9cb4185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#62811e8db52911eaa673185680f89476\">Technical Full Specification for Hull</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "0e7c60b6b6a811ea9c1c185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYR-0060",
+            "ID": "75",
+            "REV": "",
+            "TITLE": "Oil Spill and Dispersion Modeling Report"
+         },
+         "format": "Reference",
+         "uid": "0f11d87bb53111eaab8e185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "ISO",
+            "DOCNO": "ISO 17776",
+            "ID": "22",
+            "Link": "",
+            "REV": "2016",
+            "TITLE": "ISO 17776 <span style=\"color:#414042\"><span style=\"font-size:large\">Petroleum and natural gas industries \u2014 Offshore production installations \u2014 Major Accident hazard management during the design of new installations</span></span>"
+         },
+         "format": "Reference",
+         "uid": "0f9306bdb52311ea9aec185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "J75182A-P-RT-15004",
+            "ID": "73",
+            "Link": "",
+            "REV": "B2",
+            "TITLE": "Mercury Mapping Study Report"
+         },
+         "format": "Reference",
+         "uid": "12c1feaab52c11eaad87185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "ISO",
+            "DOCNO": "ISO 14122",
+            "ID": "19.1",
+            "Link": "",
+            "REV": "",
+            "TITLE": "Part 2: Working platform and walkways"
+         },
+         "format": "Reference",
+         "uid": "13bcfed3b52711ea8ba4185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#c27eb3e7b52a11eab6c9185680f89476\">Telecommunication Functional Specification</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "143d5cc0b75611ea9658185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "UK HSE",
+            "DOCNO": "",
+            "ID": "10",
+            "Link": "",
+            "REV": "",
+            "TITLE": "Assessment Principe for Offshore Safety Case (APOSC)"
+         },
+         "format": "Reference",
+         "uid": "1492ce08b52b11eaa84a185680f89476"
+      },
+      {
+         "children": [
+            "a65ffc52ad3611eaa7c79cb6d0bc7fdc",
+            "1d00a3f8acc211eabd639cb6d0bc7fdc",
+            "40776bb6acc211eab4f49cb6d0bc7fdc",
+            "8db289eeacc911eab7439cb6d0bc7fdc",
+            "50c5d6e6acd111eaa9ef9cb6d0bc7fdc",
+            "593be1f4acc411eab7419cb6d0bc7fdc"
+         ],
+         "data": {
+            "Goal": "To maintain the load bearing fuction up to the design accidental load",
+            "Name": "Structure",
+            "SCEID": "1"
+         },
+         "format": "Element",
+         "uid": "1646b9eeacc211eaab529cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "5.2",
+            "AvailabilityCriterion": "Unserviceable helicopter shall be handled by the pedestal crane to portside laydown area or offshore service vessel.",
+            "AvailabiltyAssurance": "Written procedure to ensure forthe AFT main crane to handle an unserviceable helicopter",
+            "SubElement": "<a href=\"#a6dfd40bb69e11ea9de4185680f895c0\">Helideck structure</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "1688173ab75011ea8f2f185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Flooding",
+            "SubElement": "<a href=\"#c4831781b69e11eaab3e185680f895c0\">Flooding Alarm</a>",
+            "SurvCriterion": "Watertight structural members shall be provided with means for effective drainage and sounding, e.g. water detector or level indication",
+            "SurvID": "6.3"
+         },
+         "format": "MAHSurvivability",
+         "uid": "16bcb6eeb75411ea977e185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "ISO",
+            "DOCNO": "ISO 14122",
+            "ID": "19.2",
+            "Link": "",
+            "REV": "",
+            "TITLE": "Part 3: Stairs, stepladders and guard-rails"
+         },
+         "format": "Reference",
+         "uid": "1929cb4eb52711eaa62d185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "DepDescription": "Emegency power or battery...",
+            "DepSCEName": "<a href=\"#1646b9eeacc211eaab529cb6d0bc7fdc\">SCE01 Structure</a>"
+         },
+         "format": "DependentSCE",
+         "uid": "19bf2200b6a611ea8b88185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-HVS-1000",
+            "ID": "59",
+            "REV": "",
+            "TITLE": "HVAC Specification Topside"
+         },
+         "format": "Reference",
+         "uid": "1a544194b52f11eaae32185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-HVD-0003",
+            "ID": "55",
+            "REV": "",
+            "TITLE": "HVAC D&amp;ID - Workshop &amp; Laboratory Building"
+         },
+         "format": "Reference",
+         "uid": "1a7a44a8b52f11ea94d1185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001- KGD6-D2-PF-OF-MJ1F-C000-440005618-SYD-0002-03",
+            "ID": "26",
+            "REV": "",
+            "TITLE": "Escape Route Plan (Deck C)"
+         },
+         "format": "Reference",
+         "uid": "1a9bfd0fb52f11ea9885185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-HVD-0005",
+            "ID": "57",
+            "REV": "A",
+            "TITLE": "HVAC Duct Practice (Topside &amp; LQ)"
+         },
+         "format": "Reference",
+         "uid": "1ab74d3bb52f11eab58d185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-HVS-5902",
+            "ID": "58",
+            "REV": "",
+            "TITLE": "HVAC Duct Practice for Hull (Except LQ)"
+         },
+         "format": "Reference",
+         "uid": "1ad75896b52f11eaa285185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "IEC",
+            "DOCNO": "IEC 61511",
+            "ID": "16",
+            "Link": "",
+            "REV": "2016",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">IEC 61511 Functional Safety- Safety Instrumented System for the Process Industry Sector</span></span>"
+         },
+         "format": "Reference",
+         "uid": "1b189521b52d11eaacb0185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "Criteria stated in design bases shall not be exceeded.",
+            "Function": "Topside support structures shall be capable of supporting all necessary loads under normal conditions and in the event of external loading caused by extreme environmental conditions.",
+            "Ref": "1.3"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "1c5fc754b6a711eabf32185680f895c0"
+      },
+      {
+         "children": [
+            "3260d9b0acc211ea8a839cb6d0bc7fdc",
+            "58ecace8b6a711eab00a185680f895c0",
+            "1c5fc754b6a711eabf32185680f895c0",
+            "eee63458b6a811eaafbb185680f895c0",
+            "fc562a46b6a811ea8f2f185680f895c0",
+            "1d9b5d70b6a911eaae99185680f895c0",
+            "43dccf50b75411eab1eb185680f895c0",
+            "87b227bab75411ea893f185680f895c0"
+         ],
+         "data": {
+            "Name": "Functionality"
+         },
+         "format": "Functionality",
+         "uid": "1d00a3f8acc211eabd639cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "Acceptable recognised vibration limits to prevent structural damage???",
+            "Function": "Vibration on the structure shall be controlled within the acceptable recognized limit.",
+            "Ref": "1.6"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "1d9b5d70b6a911eaae99185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "NORSOK",
+            "DOCNO": "NORSOK C-001",
+            "ID": "25",
+            "Link": "",
+            "REV": "",
+            "TITLE": "NORSOK C-001 Living quarters area"
+         },
+         "format": "Reference",
+         "uid": "20c6f3c8b52911ea9ceb185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Assurance": "Class rule",
+            "Criteria": "<span style=\"font-size:large\">The ballast system shall be arranged with cross connections ensuring that ballast water can be cross fed from one side of the vessel to the other as a contingency measure.</span> ",
+            "Function": "<span style=\"font-size:large\">To cross-feed ballast water from one side of the vessel to the other </span>",
+            "Ref": "6.3"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "223acf02b6a011ea8cfe185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "6.2",
+            "AvailabilityCriterion": "Ballasting operation shall be continued upon a single failure",
+            "AvailabiltyAssurance": "FMEA?",
+            "SubElement": "<a href=\"#c483177bb69e11eab8f4185680f895c0\">Ballast Water Ringmain and Pump</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "257e1108b6a111eaaacf185680f895c0"
+      },
+      {
+         "children": [
+            "25993808b52111ea8905185680f895c0",
+            "259937fcb52111ea846e185680f895c0",
+            "259937feb52111ea820f185680f895c0",
+            "25993805b52111ea8346185680f895c0",
+            "259937ffb52111ea988f185680f895c0",
+            "25993800b52111eab95c185680f895c0"
+         ],
+         "data": {
+            "Goal": "To provide propulsion and steering to move away from the operatoin field upon harsh weather or to move to a new field without external support",
+            "Name": "Propulsion",
+            "SCEID": "4"
+         },
+         "format": "Element",
+         "uid": "259937fbb52111ea9466185680f895c0"
+      },
+      {
+         "children": [
+            "259937fdb52111eabca3185680f895c0",
+            "981cdcecb74e11eab35a185680f895c0"
+         ],
+         "data": {
+            "Name": "Functionality"
+         },
+         "format": "Functionality",
+         "uid": "259937fcb52111ea846e185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "Cold start???",
+            "Function": "<span style=\"font-size:large\">To mobilize FPSO without external supprt</span>",
+            "Ref": "4.1"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "259937fdb52111eabca3185680f895c0"
+      },
+      {
+         "children": [
+            "25993804b52111eabfcf185680f895c0",
+            "f65491dcb74e11eaa5f3185680f895c0"
+         ],
+         "data": {
+            "Name": "Availability"
+         },
+         "format": "Availability",
+         "uid": "259937feb52111ea820f185680f895c0"
+      },
+      {
+         "children": [
+            "25993803b52111ea90fd185680f895c0"
+         ],
+         "data": {
+            "Name": "Dependencies"
+         },
+         "format": "Dependencies",
+         "uid": "259937ffb52111ea988f185680f895c0"
+      },
+      {
+         "children": [
+            "2599380db52111eaae99185680f895c0",
+            "028ee055b75511ea9d7c185680f895c0"
+         ],
+         "data": {
+            "Name": "References"
+         },
+         "format": "ReferenceList",
+         "uid": "25993800b52111eab95c185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Explosion",
+            "SubElement": "<a href=\"#c0304c46ad3611ea93019cb6d0bc7fdc\">Hull</a>",
+            "SurvAssurance": "Design upon DAL",
+            "SurvCriterion": "The TR shall be designed to withstand explosion overpressure of 0.xx barg and other accidental loads specified in the report XXXXXX. ",
+            "SurvID": "4.2"
+         },
+         "format": "MAHSurvivability",
+         "uid": "25993801b52111eaa04c185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "DepDescription": "Primary members are protected by PFO when necessary",
+            "DepSCEName": "<a href=\"#9e0e7502acd111eab50b9cb6d0bc7fdc\">SCE02 Hydrocarbon containment</a>"
+         },
+         "format": "DependentSCE",
+         "uid": "25993803b52111ea90fd185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "4.1",
+            "AvailabilityCriterion": "The propulsion and steering capabitly shall be available within XX hours",
+            "AvailabiltyAssurance": "Procedure verified upon sea trial???",
+            "SubElement": "<a href=\"#c0304c46ad3611ea93019cb6d0bc7fdc\">Hull</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "25993804b52111eabfcf185680f895c0"
+      },
+      {
+         "children": [
+            "25993806b52111ea8eb3185680f895c0",
+            "25993801b52111eaa04c185680f895c0"
+         ],
+         "data": {
+            "Name": "Survivability"
+         },
+         "format": "Survivability",
+         "uid": "25993805b52111ea8346185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Fire",
+            "SubElement": "<a href=\"#c0304c46ad3611ea93019cb6d0bc7fdc\">Hull</a>",
+            "SurvAssurance": "A60",
+            "SurvCriterion": "Max heat load of 10 kW/m2 as per FRA",
+            "SurvID": "4.1"
+         },
+         "format": "MAHSurvivability",
+         "uid": "25993806b52111ea8eb3185680f895c0"
+      },
+      {
+         "children": [
+            "25993809b52111eaa1d1185680f895c0",
+            "2599380ab52111eab920185680f895c0",
+            "2599380cb52111ea89a0185680f895c0"
+         ],
+         "data": {
+            "Name": "SubElements<br />"
+         },
+         "format": "SubElements",
+         "uid": "25993808b52111ea8905185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Main engine"
+         },
+         "format": "SubElement",
+         "uid": "25993809b52111eaa1d1185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Fuel oil supply system"
+         },
+         "format": "SubElement",
+         "uid": "2599380ab52111eab920185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Steering gear system"
+         },
+         "format": "SubElement",
+         "uid": "2599380cb52111ea89a0185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#d838e8d5ad2911eaadcb9cb6d0bc7fdc\">FPSO DESIGN BASIS</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "2599380db52111eaae99185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-SS-MJ1F-A00-0000000-MRR-0001",
+            "ID": "74",
+            "REV": "0",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Metocean Fatigue Seastates</span></span>"
+         },
+         "format": "Reference",
+         "uid": "2a43aed3b52811eaa052185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYD-0002-01</span></span>",
+            "ID": "24",
+            "REV": "A",
+            "TITLE": "Escape Route Plan (Deck A) "
+         },
+         "format": "Reference",
+         "uid": "2f888e43b52411eaab21185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Extrement environment",
+            "SubElement": "<a href=\"#c0304c46ad3611ea93019cb6d0bc7fdc\">Hull</a>",
+            "SurvCriterion": "Where structural supports, which upon failure or collapse are likely to cause loss of a main safety function, are located within reach of green sea, they shall be designed to withstand the green water loads.",
+            "SurvID": "1.5"
+         },
+         "format": "MAHSurvivability",
+         "uid": "3107f108b6a911eabf6f185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "Motion criteria stated in design bases shall not be exceeded.  ",
+            "Function": "The Hull structure and anchoring mechanism shall be sufficient to support the topside facilities, appurtenances (i.e. risers, conductors, caissons, ) and topside structures (flare, helideck) ensuring stability under all foreseeable operational, environmental and accidental conditions.",
+            "Ref": "1.1"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "3260d9b0acc211ea8a839cb6d0bc7fdc"
+      },
+      {
+         "children": [
+            "33ba1f51b51b11ea984f185680f895c0",
+            "33b9f861b51b11ea99c0185680f895c0",
+            "33b9f863b51b11eab091185680f895c0",
+            "33ba1f4eb51b11ea9431185680f895c0",
+            "33b9f864b51b11eab496185680f895c0",
+            "33b9f865b51b11ea9a12185680f895c0"
+         ],
+         "data": {
+            "Goal": "To maintain the FPSO position and provide reliable connection to flow lines. The system must enable the FPSO to weathervane and to withstand all design environmental conditions sufficiently to maintain riser and umbilical integrity",
+            "Name": "Turret mooring system",
+            "SCEID": "2"
+         },
+         "format": "Element",
+         "uid": "33b9f860b51b11eaa7e1185680f895c0"
+      },
+      {
+         "children": [
+            "33b9f862b51b11eab9db185680f895c0",
+            "33ba1f50b51b11ea8d83185680f895c0",
+            "6bcbd05cb52011eab846185680f895c0",
+            "f80d29b4b6a911ea918f185680f895c0",
+            "346f92f8b6aa11eabd66185680f895c0",
+            "5a0a95b0b6aa11eaa1a1185680f895c0"
+         ],
+         "data": {
+            "Name": "Functionality"
+         },
+         "format": "Functionality",
+         "uid": "33b9f861b51b11ea99c0185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Assurance": "Test???",
+            "Criteria": "Offsets during single and double line failure shall not cause the risers to fail and interference between riser and mooring shall be avoided",
+            "Function": "The FPSO shall maintain the position within the allowed displacement using only the TMS without external thrust.",
+            "Ref": "2.1"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "33b9f862b51b11eab9db185680f895c0"
+      },
+      {
+         "children": [
+            "33ba1f4db51b11eabe85185680f895c0"
+         ],
+         "data": {
+            "Name": "Availability"
+         },
+         "format": "Availability",
+         "uid": "33b9f863b51b11eab091185680f895c0"
+      },
+      {
+         "children": [
+            "33ba1f4cb51b11ea8f63185680f895c0"
+         ],
+         "data": {
+            "Name": "Dependencies"
+         },
+         "format": "Dependencies",
+         "uid": "33b9f864b51b11eab496185680f895c0"
+      },
+      {
+         "children": [
+            "f63ac095b52011ea9a18185680f895c0",
+            "f616f0f1b75411eab3d7185680f895c0",
+            "33ba1f54b51b11ea81c0185680f895c0",
+            "f26fb2e4b75511eaad6e185680f895c0"
+         ],
+         "data": {
+            "Name": "References"
+         },
+         "format": "ReferenceList",
+         "uid": "33b9f865b51b11ea9a12185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Explosion",
+            "SubElement": "<a href=\"#c0304c46ad3611ea93019cb6d0bc7fdc\">Hull</a>",
+            "SurvAssurance": "Design upon DAL",
+            "SurvCriterion": "The turret cylinder structure (outer wall) shall be designed to withstand explosion overpressure of 1.5 barg. Explosion relief panle of XX m2 at the top of the turret shall open at the overpressure of xx barg.",
+            "SurvID": "2.2"
+         },
+         "format": "MAHSurvivability",
+         "uid": "33b9f866b51b11ea8b68185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "DepDescription": "Primary members are protected by PFO when necessary",
+            "DepSCEName": "<a href=\"#9e0e7502acd111eab50b9cb6d0bc7fdc\">SCE02 Hydrocarbon containment</a>"
+         },
+         "format": "DependentSCE",
+         "uid": "33ba1f4cb51b11ea8f63185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "2.1",
+            "AvailabilityCriterion": "Position keeping shall be available upon a loss of one mooring line",
+            "AvailabiltyAssurance": "",
+            "SubElement": "<a href=\"#abe18da5b51b11ea9bd1185680f895c0\">Hull</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "33ba1f4db51b11eabe85185680f895c0"
+      },
+      {
+         "children": [
+            "33ba1f4fb51b11ea8e89185680f895c0",
+            "33b9f866b51b11ea8b68185680f895c0"
+         ],
+         "data": {
+            "Name": "Survivability"
+         },
+         "format": "Survivability",
+         "uid": "33ba1f4eb51b11ea9431185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Fire",
+            "SubElement": "<a href=\"#c0304c46ad3611ea93019cb6d0bc7fdc\">Hull</a>",
+            "SurvAssurance": "Design upon DAL",
+            "SurvCriterion": "Max heat load of xxx kW/m2 as per FRA",
+            "SurvID": "2.1"
+         },
+         "format": "MAHSurvivability",
+         "uid": "33ba1f4fb51b11ea8e89185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Assurance": "Compliance to API RP 2SK",
+            "Criteria": "The mooring system shall be designed to remain connected all year round and through all the ranges of Metocean data specified.",
+            "Function": "TMS shall provide reliable connection to flow lines.",
+            "Ref": "2.2"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "33ba1f50b51b11ea8d83185680f895c0"
+      },
+      {
+         "children": [
+            "33ba1f52b51b11eaaa2b185680f895c0",
+            "33ba1f53b51b11ea890b185680f895c0",
+            "33ba1f55b51b11ea83b1185680f895c0",
+            "76cf3279b51b11eab2ba185680f895c0",
+            "7992c9e7b51b11ea89b7185680f895c0",
+            "8e0f10a8b51b11eaae5f185680f895c0",
+            "96c6d298b51b11eab7a7185680f895c0",
+            "a18638a9b51b11eabfec185680f895c0",
+            "abe18da5b51b11ea9bd1185680f895c0"
+         ],
+         "data": {
+            "Name": "SubElements<br />"
+         },
+         "format": "SubElements",
+         "uid": "33ba1f51b51b11ea984f185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Turret Cylinder Structure (Outer Wall)"
+         },
+         "format": "SubElement",
+         "uid": "33ba1f52b51b11eaaa2b185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Turret Swivel Support Structure (Inner Support Structure)"
+         },
+         "format": "SubElement",
+         "uid": "33ba1f53b51b11ea890b185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#d64abd8dad2911eaabb19cb6d0bc7fdc\">Basis of Design for T-S Structure</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "33ba1f54b51b11ea81c0185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Turret Geostationary Structure (Swivel, Bearing)"
+         },
+         "format": "SubElement",
+         "uid": "33ba1f55b51b11ea83b1185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Function": "Turret structure (outerwall) shall withstand design explosion load with adequate explosion load relief method",
+            "Ref": "2.5"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "346f92f8b6aa11eabd66185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#632acc0db52911eaaead185680f89476\">Helicopter Crash Study</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "3509e230b75511ea9dcd185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "6.4",
+            "AvailabilityCriterion": "One aire driven pump at the following rooms: FWD VOID &amp; Chain locker, Utility room, FWD fire water pump rooms (P) and (S), Turret VOID, Cofferdam &amp; one portable air driven pump for oil spill on upper deck",
+            "AvailabiltyAssurance": "IMO regulation and the requirement of Classification Society",
+            "SubElement": "<a href=\"#af4870bab69f11eaa8f3185680f895c0\">Bilge Pump</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "363ebf4ab75311eaa55c185680f895c0"
+      },
+      {
+         "children": [
+            "378135c8b51c11ea9f06185680f895c0",
+            "378135bcb51c11ea901d185680f895c0",
+            "378135beb51c11ea8512185680f895c0",
+            "378135c5b51c11ea92ae185680f895c0",
+            "378135bfb51c11eaaaa7185680f895c0",
+            "378135c0b51c11ea9ba1185680f895c0"
+         ],
+         "data": {
+            "Goal": "To monitor vessel actvities and provide adequate information to prevent collisio and navigational aide for vessels and helicopter",
+            "Name": "Ship collision avoidance &amp; navigation aid",
+            "SCEID": "3"
+         },
+         "format": "Element",
+         "uid": "378135bbb51c11ea8ad4185680f895c0"
+      },
+      {
+         "children": [
+            "378135bdb51c11eaa64b185680f895c0",
+            "610db452b6a211ea9be7185680f895c0",
+            "b1be9d2cb6a211eaa41e185680f895c0",
+            "41b3faa8b6ac11ea8473185680f895c0",
+            "9f6e703ab74d11eaa8dd185680f895c0",
+            "cdcbc476b74d11ea871e185680f895c0",
+            "f86420b0b74d11eaa7e5185680f895c0"
+         ],
+         "data": {
+            "Name": "Functionality"
+         },
+         "format": "Functionality",
+         "uid": "378135bcb51c11ea901d185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Assurance": "Compliance to Class rule and Tech specification",
+            "Criteria": "The system shall present vessel movements on graphics that are based on marine charts. The system shall provide the facility to track and identify the vessels, initiate alarms should the vessels enter pre-defined exclusion zones or be on course that would in any way present a risk to the installation or the operation in the proximity of the platform. The information from the tracking system may be integrated with data from other installations and made available to other agencies. As such the system shall have the capability to store and hand off the data.",
+            "Function": "There shall be a collision monitoring system able to detect a vessel on collision course.",
+            "Ref": "3.1"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "378135bdb51c11eaa64b185680f895c0"
+      },
+      {
+         "children": [
+            "378135c4b51c11eabf34185680f895c0",
+            "378135c2b51c11ea88be185680f895c0",
+            "f83e2fcab51c11eaaecd185680f895c0",
+            "c9a470cab6a211eaa2a3185680f895c0"
+         ],
+         "data": {
+            "Name": "Availability"
+         },
+         "format": "Availability",
+         "uid": "378135beb51c11ea8512185680f895c0"
+      },
+      {
+         "children": [
+            "19bf2200b6a611ea8b88185680f895c0",
+            "7a22fcb4b6a611ea8b62185680f895c0"
+         ],
+         "data": {
+            "Name": "Dependencies"
+         },
+         "format": "Dependencies",
+         "uid": "378135bfb51c11eaaaa7185680f895c0"
+      },
+      {
+         "children": [
+            "378135cdb51c11ea98dc185680f895c0",
+            "fa81b331b75411ea96f4185680f895c0",
+            "143d5cc0b75611ea9658185680f895c0",
+            "564bd0f0b6a611eaac6a185680f895c0"
+         ],
+         "data": {
+            "Name": "References"
+         },
+         "format": "ReferenceList",
+         "uid": "378135c0b51c11ea9ba1185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "3.2",
+            "AvailabilityCriterion": "AIS shall work continuously with  back-up electric power.",
+            "AvailabiltyAssurance": "Class rule compliance",
+            "SubElement": "<a href=\"#378135cab51c11ea9070185680f895c0\">Topside Primary Members</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "378135c2b51c11ea88be185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "3.1",
+            "AvailabilityCriterion": "RADAR shall work continuously with back-up electric power.",
+            "AvailabiltyAssurance": "Class rule compliance",
+            "SubElement": "<a href=\"#378135c9b51c11ea93f4185680f895c0\">#####</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "378135c4b51c11eabf34185680f895c0"
+      },
+      {
+         "children": [
+            "378135c6b51c11eaa4dc185680f895c0"
+         ],
+         "data": {
+            "Name": "Survivability"
+         },
+         "format": "Survivability",
+         "uid": "378135c5b51c11ea92ae185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Fire",
+            "SubElement": "<a href=\"#c0304c46ad3611ea93019cb6d0bc7fdc\">Hull</a>",
+            "SurvAssurance": "To be protected by location/Alternative location of monitoring?",
+            "SurvCriterion": "No specific design criteion",
+            "SurvID": "3.1"
+         },
+         "format": "MAHSurvivability",
+         "uid": "378135c6b51c11eaa4dc185680f895c0"
+      },
+      {
+         "children": [
+            "378135c9b51c11ea93f4185680f895c0",
+            "378135cab51c11ea9070185680f895c0",
+            "378135ccb51c11ea8552185680f895c0",
+            "378135ceb51c11ea90cb185680f895c0",
+            "378135cfb51c11ea9ca5185680f895c0",
+            "378135d0b51c11ea9c8d185680f895c0"
+         ],
+         "data": {
+            "Name": "SubElements<br />"
+         },
+         "format": "SubElements",
+         "uid": "378135c8b51c11ea9f06185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Radar"
+         },
+         "format": "SubElement",
+         "uid": "378135c9b51c11ea93f4185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Boundary": "",
+            "Name": "Automatic Identification System (AIS)"
+         },
+         "format": "SubElement",
+         "uid": "378135cab51c11ea9070185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "External Marine Communication"
+         },
+         "format": "SubElement",
+         "uid": "378135ccb51c11ea8552185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#d838e8d5ad2911eaadcb9cb6d0bc7fdc\">FPSO DESIGN BASIS</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "378135cdb51c11ea98dc185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Navigational Light"
+         },
+         "format": "SubElement",
+         "uid": "378135ceb51c11ea90cb185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Shuttle Tanker Positioning System"
+         },
+         "format": "SubElement",
+         "uid": "378135cfb51c11ea9ca5185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Boundary": "\u00a0Visual Signal System (Navigation Aid System and Warning Light)",
+            "Name": "Visual Signal System (Navigation Aid System and Warning Light)"
+         },
+         "format": "SubElement",
+         "uid": "378135d0b51c11ea9c8d185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "API",
+            "DOCNO": "API STD 521",
+            "ID": "29",
+            "Link": "",
+            "REV": "",
+            "TITLE": "Pressure-relieving and Depressuring Systems"
+         },
+         "format": "Reference",
+         "uid": "379796afb52911eaae08185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYR-0058",
+            "ID": "96",
+            "Link": "",
+            "REV": "B",
+            "TITLE": "Ship Collision Study"
+         },
+         "format": "Reference",
+         "uid": "3a042629b52a11eaa2b2185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-INL-0001 </span></span>",
+            "ID": "64",
+            "REV": "",
+            "TITLE": "Instrument Design Basis"
+         },
+         "format": "Reference",
+         "uid": "3c73cae4b52e11eabad6185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-INS-0018 </span></span><span style=\"color:#414042\"><span style=\"font-size:large\"> </span></span>",
+            "ID": "103",
+            "REV": "",
+            "TITLE": "Technical Specification for Electronic Transmitters (PT/PDT/FT/TT/LT)"
+         },
+         "format": "Reference",
+         "uid": "3c9a46ceb52e11eaa961185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-INS-0019 </span></span><span style=\"color:#414042\"><span style=\"font-size:large\"> </span></span>",
+            "ID": "105",
+            "REV": "",
+            "TITLE": "Technical Specification for Radar and Guided Wave Radar Level Instruments"
+         },
+         "format": "Reference",
+         "uid": "3cb5d7e5b52e11ea9443185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRD-0003 </span></span>",
+            "ID": "13",
+            "REV": "",
+            "TITLE": "Cause and Effect Diagram"
+         },
+         "format": "Reference",
+         "uid": "3cd2607db52e11eab36c185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRD-0008 </span></span>",
+            "ID": "29",
+            "REV": "",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">ESD Hierarchy Block Diagram</span></span>"
+         },
+         "format": "Reference",
+         "uid": "3ced146bb52e11ea9741185680f89476"
+      },
+      {
+         "children": [
+            "68637294acc811eab7139cb6d0bc7fdc",
+            "60e2b88caccc11eaa40a9cb6d0bc7fdc"
+         ],
+         "data": {
+            "Name": "Availability"
+         },
+         "format": "Availability",
+         "uid": "40776bb6acc211eab4f49cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "Assurance": "Compliance to Class rule and Tech specification",
+            "Criteria": "Two (2) complete sets of radar shall be provided, with long range (S band) and accuracy (X band) features fitted with automatic radar plotting aids (ARPA) and interfaced with Gyrocompass, Automatic Identification system (AIS), DGPS systems to provide trajectory predictions and collision avoidance alerts for safety marine operation.<br />Radars components shall comply with Electromagnetic Compatibility Regulations<br />The radar shall detect crafts 5-10 nm (not less than 5 nm)",
+            "Function": "There shall be interfaces between RADAR and other systems to provide trajectory predictions and collision avoidance alerts for safety marine operation.",
+            "Ref": "3.4"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "41b3faa8b6ac11ea8473185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-INS-0008 </span></span>",
+            "ID": "104",
+            "REV": "",
+            "TITLE": "Technical Specification for ICSS"
+         },
+         "format": "Reference",
+         "uid": "43352ff9b52d11eaa99f185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-IND-5606 </span></span>",
+            "ID": "28",
+            "REV": "",
+            "TITLE": "ESD Cause and Effect for Hull"
+         },
+         "format": "Reference",
+         "uid": "436120c0b52d11eab72b185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-IND-5608</span></span>",
+            "ID": "15",
+            "REV": "",
+            "TITLE": "Control Narrative for Hull"
+         },
+         "format": "Reference",
+         "uid": "43817b3ab52d11eaaa59185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-IND-5602 </span></span>",
+            "ID": "61",
+            "REV": "",
+            "TITLE": "I/O List for Hull"
+         },
+         "format": "Reference",
+         "uid": "439e039db52d11ea9a41185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "Separation/isolation shall be sufficient to preventing an escalation considering probable effect distance or possiblity of successive collapse of structure",
+            "Function": "To provide safety by distance or seprartion  to prevent an escalation of an initiating event",
+            "Ref": "1.7"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "43dccf50b75411eab1eb185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#62811e8db52911eaa673185680f89476\">Technical Full Specification for Hull</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "4455c414b75511ea9a78185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "ABS",
+            "DOCNO": "",
+            "ID": "7",
+            "Link": "",
+            "REV": "",
+            "TITLE": "ABS Ergonomic Notations"
+         },
+         "format": "Reference",
+         "uid": "47097ffcb52911ea835e185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-ELH-0003",
+            "ID": "68",
+            "REV": "C",
+            "TITLE": "Lighting Design Philosophy"
+         },
+         "format": "Reference",
+         "uid": "48fb3d05b53211ea8389185680f89476"
+      },
+      {
+         "children": [
+            "62b1e2b4acd111eaadd99cb6d0bc7fdc"
+         ],
+         "data": {
+            "Name": "Dependencies"
+         },
+         "format": "Dependencies",
+         "uid": "50c5d6e6acd111eaa9ef9cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYD-0002-02</span></span>",
+            "ID": "25",
+            "REV": "A",
+            "TITLE": "<span style=\"font-size:small\"> </span>Escape Route Plan (Deck B) "
+         },
+         "format": "Reference",
+         "uid": "519b9f0bb52411eaad2c185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#3a042629b52a11eaa2b2185680f89476\">Ship Collision Study</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "564bd0f0b6a611eaac6a185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "The design codes and load analysis cases have been specified for the topsides in the Structural Design Brief and for LQ.<br />",
+            "Function": "The primary structures shall be built to a recognised national or international standard addressing fatigue, corrosion protection, defects, subsidence, redundancy and accidental loading.",
+            "Ref": "1.2"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "58ecace8b6a711eab00a185680f895c0"
+      },
+      {
+         "children": [
+            "ec05525aad3711eaa7659cb6d0bc7fdc",
+            "0e7c60b6b6a811ea9c1c185680f895c0",
+            "e0e5e35ead3711eaa0079cb6d0bc7fdc",
+            "046b5152b6a811ea8247185680f895c0",
+            "0945689eb6a811eaabf8185680f895c0",
+            "64b9ac02b75611ea8719185680f895c0",
+            "7083b8b6b75611eaa8d6185680f895c0",
+            "7c573010b75611ea829f185680f895c0",
+            "86f1ae1ab75611ea8029185680f895c0",
+            "9333c490b75611ea8036185680f895c0"
+         ],
+         "data": {
+            "Name": "References"
+         },
+         "format": "ReferenceList",
+         "uid": "593be1f4acc411eab7419cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "Function": "TMS shall be disconnectable in a reliable manner to allow FPSO to leave upon extreme environment",
+            "Ref": "2.6"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "5a0a95b0b6aa11eaa1a1185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYR-0054",
+            "ID": "38",
+            "Link": "",
+            "REV": "B",
+            "TITLE": "Fire Risk Analysis"
+         },
+         "format": "Reference",
+         "uid": "5a2d74aab52a11ea8546185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYR-0055",
+            "ID": "33",
+            "Link": "",
+            "REV": "B",
+            "TITLE": "Explosion Risk Analysis"
+         },
+         "format": "Reference",
+         "uid": "5a4df397b52a11ea9881185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYR-0056",
+            "ID": "100",
+            "Link": "",
+            "REV": "B",
+            "TITLE": "Smoke and Gas Dispersion Analysis"
+         },
+         "format": "Reference",
+         "uid": "5a6c50f3b52a11ea94c9185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYR-0065",
+            "ID": "31",
+            "Link": "",
+            "REV": "B",
+            "TITLE": "Exhaust Dispersion Study"
+         },
+         "format": "Reference",
+         "uid": "5a8901dfb52a11ea99b2185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYD-0026",
+            "ID": "83",
+            "Link": "",
+            "REV": "A",
+            "TITLE": "Overall Safety Control Plan"
+         },
+         "format": "Reference",
+         "uid": "5a9fbe83b52a11eabb78185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Explosion",
+            "SubElement": "<a href=\"#db7ce2c8ad3611ea9fe39cb6d0bc7fdc\">Hull</a>",
+            "SurvAssurance": "Design upon DAL",
+            "SurvCriterion": "The Topside structure shall be able to withstand the effects of dimensioning explosion loads as defined in the DAL specification. ",
+            "SurvID": "1.2"
+         },
+         "format": "MAHSurvivability",
+         "uid": "5d105582acce11eab9589cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYD-0003</span></span>",
+            "ID": "36",
+            "REV": "A",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Fire Integrity Drawing for Topsides</span></span>"
+         },
+         "format": "Reference",
+         "uid": "60328709b52411ea924f185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "1.2",
+            "AvailabilityCriterion": "Load-bearing structures shall be sufficiently robust to ensure that local damage or failure will not result in unacceptable consequences.",
+            "AvailabiltyAssurance": "",
+            "SubElement": "<a href=\"#db7ce2c8ad3611ea9fe39cb6d0bc7fdc\">Topside Primary Members</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "60e2b88caccc11eaa40a9cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "Assurance": "Compliance to Class rule and Tech specification",
+            "Criteria": "The radar system shall be able to register the course and speed of the object, and plotting facilities shall be included, e.g. automatic radar, plotting aid. Radar signals shall be transmitted to unit responsible for surveillance. The RADAR system shall be interfaced with 'StatoilHydro Surveillance RADAR system' (Statoil Marine VTS)",
+            "Function": "There shall be a system to register the course and speed of the surrounding vessels.",
+            "Ref": "3.2"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "610db452b6a211ea9be7185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PEA-0002",
+            "ID": "95",
+            "REV": "B",
+            "TITLE": "Regulatory Compliance Plan"
+         },
+         "format": "Reference",
+         "uid": "6260c54fb52911ea84d5185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-MRS-6602",
+            "ID": "102",
+            "REV": "0",
+            "TITLE": "Technical Full Specification for Hull"
+         },
+         "format": "Reference",
+         "uid": "62811e8db52911eaa673185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PMS-0003",
+            "ID": "32",
+            "REV": "",
+            "TITLE": "Exhibit B-Specifications"
+         },
+         "format": "Reference",
+         "uid": "629da741b52911eabaff185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "DepDescription": "PFP",
+            "DepSCEName": "<a href=\"#9e0e7502acd111eab50b9cb6d0bc7fdc\">SCE02 Hydrocarbon containment</a>"
+         },
+         "format": "DependentSCE",
+         "uid": "62b1e2b4acd111eaadd99cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYH-0002",
+            "ID": "23",
+            "REV": "C",
+            "TITLE": "Escape Evacuation and Rescue Design Philosophy"
+         },
+         "format": "Reference",
+         "uid": "62b88231b52911eab029185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C002-440005618-STP-5028",
+            "ID": "80",
+            "REV": "0",
+            "TITLE": "Outfitting on Forecastle Deck"
+         },
+         "format": "Reference",
+         "uid": "62d30f21b52911eabd4b185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C002-440005618-STD-5035",
+            "ID": "9",
+            "REV": "0",
+            "TITLE": "Arrangement of Insulation of Engine Room"
+         },
+         "format": "Reference",
+         "uid": "62f1939db52911eaa001185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C002-440005618-STD-5029",
+            "ID": "77",
+            "REV": "0",
+            "TITLE": "Outfitting Arrangement Fore Upper &amp; Under Deck"
+         },
+         "format": "Reference",
+         "uid": "630c6ea0b52911eab2a3185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYR-0048",
+            "ID": "52",
+            "REV": "B",
+            "TITLE": "Helicopter Crash Study"
+         },
+         "format": "Reference",
+         "uid": "632acc0db52911eaaead185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "ISO",
+            "DOCNO": "ISO 13702",
+            "ID": "18",
+            "Link": "",
+            "REV": "",
+            "TITLE": "ISO 13702 <span style=\"color:#414042\"><span style=\"font-size:large\">Petroleum and natural gas industries \u2013 Control and mitigation of fires and explosions on offshore production installations \u2014 Requirements and guidelines</span></span>"
+         },
+         "format": "Reference",
+         "uid": "6496ca9fb52311ea988a185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#5a2d74aab52a11ea8546185680f89476\">Fire Risk Analysis</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "64b9ac02b75611ea8719185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Flooding",
+            "SubElement": "<a href=\"#c4831781b69e11eaab3e185680f895c0\">Flooding Alarm</a>",
+            "SurvCriterion": "<span style=\"font-size:large\">Measures to avoid unintentional internal filling of buoyancy compartments from seawater systems shall be implemented, e.g. routing of piping outside buoyancy compartments if possible, as far as possible avoid leak sources within buoyancy compartments, consider implementing possibilities for stopping firewater pumps from CCR, consider introduction of automatic stop of seawater and firewater pumps on high water level detection within buoyancy compartments.</span>",
+            "SurvID": "6.4"
+         },
+         "format": "MAHSurvivability",
+         "uid": "64d28394b6a111eab62c185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "1.1",
+            "AvailabilityCriterion": "Load-bearing structures shall maintain satisfactory safety in use, failure, fatigue and accident limit states. They shall be able to withstand the loads they are exposed to, including loads with an annual probability of 10-2 in the failure limit state.",
+            "AvailabiltyAssurance": "Design brief",
+            "SubElement": "<a href=\"#c0304c46ad3611ea93019cb6d0bc7fdc\">Hull</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "68637294acc811eab7139cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "Function": "The FPSO shall be freely weathervaning using a passive turret mooring system, with the turret located in front of product tanks.",
+            "Ref": "2.3"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "6bcbd05cb52011eab846185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-ARV-0004</span></span>",
+            "ID": "110",
+            "REV": "A",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Topside Buildings - Fire Integrity &amp; Insulation Plans - Workshop &amp; Laboratory Building</span></span>"
+         },
+         "format": "Reference",
+         "uid": "6e0e6512b52411ea94be185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "The Helideck shall be capable of withstanding heavy normal landing and emergency landing as specified in CAP 437, based on the largest helicopter anticipated to be used at the RUBY FPSO.",
+            "Function": "To withstand impact load",
+            "Ref": "5.2"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "6ea76e6eb6ab11eaae2a185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#5a4df397b52a11ea9881185680f89476\">Explosion Risk Analysis</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "7083b8b6b75611eaa8d6185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "IEC",
+            "DOCNO": "IEC 60812",
+            "ID": "13",
+            "Link": "",
+            "REV": "2018",
+            "TITLE": "Failure modes and effects analysis (FMEA and FMECA)"
+         },
+         "format": "Reference",
+         "uid": "7231286ab53311ea863a185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "<span style=\"font-size:large\">Ballast system valves shall be designed fail-to-close</span>",
+            "Function": "<span style=\"font-size:large\">To provide fail-safe function for the ballast valves</span>",
+            "Ref": "6.4"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "7472dc0ab6a011eab209185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "IMO",
+            "DOCNO": "",
+            "ID": "17",
+            "Link": "",
+            "REV": "",
+            "TITLE": "International Convention for the Safety of Life At Sea (SOLAS)"
+         },
+         "format": "Reference",
+         "uid": "7545fb25b52811eaa7cb185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Explosion Relief Panel"
+         },
+         "format": "SubElement",
+         "uid": "76cf3279b51b11eab2ba185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "ISO",
+            "DOCNO": "ISO 20815",
+            "ID": "23",
+            "Link": "",
+            "REV": "2008",
+            "TITLE": "ISO 20815 <span style=\"color:#414042\"><span style=\"font-size:large\">Petroleum petrochemical and natural gas industries \u2013 Production assurance and reliability management</span></span>"
+         },
+         "format": "Reference",
+         "uid": "77c85153b53111ea8f06185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Tension Monitoring system"
+         },
+         "format": "SubElement",
+         "uid": "7992c9e7b51b11ea89b7185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "DepDescription": "Flooding due to ship collision can be controlled by the ballast system",
+            "DepSCEName": "<a href=\"#c483176cb69e11ea95fb185680f895c0\">SCE03 Ballast and bilge system - based on Goliat FPSO</a>"
+         },
+         "format": "DependentSCE",
+         "uid": "7a22fcb4b6a611ea8b62185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#c2644e26b52a11ea83ed185680f89476\">Dropped Object Analysis</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "7c573010b75611ea829f185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "Civil Aviation Authority",
+            "DOCNO": "CAP 437",
+            "ID": "31",
+            "Link": "",
+            "REV": "8",
+            "TITLE": "Standards for Offshore Helicopter Landing Areas"
+         },
+         "format": "Reference",
+         "uid": "7ce20327b52f11ea8e09185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-ARV-0005</span></span>",
+            "ID": "109",
+            "REV": "A",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Topside Buildings - Fire Integrity &amp; Insulation Plans - E&amp;I Building</span></span>"
+         },
+         "format": "Reference",
+         "uid": "7d2505cbb52411eabb9f185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRD-0001</span></span>",
+            "ID": "46",
+            "REV": "C",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">H&amp;M Balance</span></span>"
+         },
+         "format": "Reference",
+         "uid": "8076a26fb52511ea8884185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYD-0113",
+            "ID": "35",
+            "REV": "A",
+            "TITLE": "Fire &amp; Safety Equipmet Plan"
+         },
+         "format": "Reference",
+         "uid": "808e5fcbb53211ea9f8b185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRD-0002</span></span>",
+            "ID": "11",
+            "REV": "C",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">BFD (Block Flow Diagram)</span></span>"
+         },
+         "format": "Reference",
+         "uid": "809cef32b52511eaa236185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGDG-D2-PF-OF-MJ1F-C000-440005618-PPG-0001</span></span>",
+            "ID": "81",
+            "REV": "B",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Overall Layout ( Plan / Elevation )</span></span>"
+         },
+         "format": "Reference",
+         "uid": "80c118ebb52511ea9b27185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PPH-0003</span></span>",
+            "ID": "65",
+            "REV": "B",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Insulation Philosophy</span></span>"
+         },
+         "format": "Reference",
+         "uid": "80dbcce4b52511ea9846185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYL-0001</span></span>",
+            "ID": "53",
+            "REV": "B",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">HSE Design Basis</span></span>"
+         },
+         "format": "Reference",
+         "uid": "80f680cdb52511ea87e9185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYD-0008</span></span>",
+            "ID": "39",
+            "REV": "B",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Fire Zone Layout</span></span>"
+         },
+         "format": "Reference",
+         "uid": "8131b53db52511ea92e7185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYD-0115-01~05</span></span>",
+            "ID": "47",
+            "REV": "A",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Hazardous Area Classification Drawing (Deck A, B, Above Deck B, Elevation View, Section View)</span></span>"
+         },
+         "format": "Reference",
+         "uid": "814c41f7b52511ea8c9c185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYV-0020</span></span>",
+            "ID": "48",
+            "REV": "A",
+            "TITLE": "<span style=\"font-size:small\"> </span>Hazardous Area Schedule "
+         },
+         "format": "Reference",
+         "uid": "8168f307b52511ea9fcf185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#3a042629b52a11eaa2b2185680f89476\">Ship Collision Study</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "86f1ae1ab75611ea8029185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "IMO",
+            "DOCNO": "IMO Resolution MSC.266(84)",
+            "ID": "11",
+            "Link": "",
+            "REV": "2008",
+            "TITLE": "Code of Safety for Special Purpose Ships"
+         },
+         "format": "Reference",
+         "uid": "87501e0db52811eaaf2f185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Assurance": "Type certification of the watertight door",
+            "Criteria": "Waterhead to be contained checked against probable accident?",
+            "Function": "To prevent flooding in an area from spreading beyond the area of accident",
+            "Ref": "1.8"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "87b227bab75411ea893f185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SINTEF Industrial management",
+            "DOCNO": "IEC 60812",
+            "ID": "27",
+            "Link": "",
+            "REV": "6",
+            "TITLE": "OREDA Offshore and Onshore Reliability Data, Volume 1 \u2013Topside Equipment"
+         },
+         "format": "Reference",
+         "uid": "8aea5701b53311eaba2d185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-ARD-0002</span></span>",
+            "ID": "107",
+            "REV": "B",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Topside Buildings - Architectural Elevation &amp; Section - E&amp;I Building</span></span>"
+         },
+         "format": "Reference",
+         "uid": "8b28e1a0b52411eab2a8185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRD-5201 </span></span>",
+            "ID": "86",
+            "REV": "",
+            "TITLE": "Piping and Instrument Diagram of Hull Part"
+         },
+         "format": "Reference",
+         "uid": "8d8873c9b52d11eaa881185680f89476"
+      },
+      {
+         "children": [
+            "9a1c8288acc911ea9f119cb6d0bc7fdc",
+            "5d105582acce11eab9589cb6d0bc7fdc",
+            "c6660d9eb6a711ea9701185680f895c0",
+            "d4fcb194b6a711ea8f01185680f895c0",
+            "3107f108b6a911eabf6f185680f895c0"
+         ],
+         "data": {
+            "Name": "Survivability"
+         },
+         "format": "Survivability",
+         "uid": "8db289eeacc911eab7439cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Passive Weathervaning system"
+         },
+         "format": "SubElement",
+         "uid": "8e0f10a8b51b11eaae5f185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-INJ-0001 </span></span>",
+            "ID": "17",
+            "REV": "",
+            "TITLE": "Datasheet for HIPPS Instruments"
+         },
+         "format": "Reference",
+         "uid": "8f85a361b52d11ea8338185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-INJ-0012 </span></span>",
+            "ID": "16",
+            "REV": "",
+            "TITLE": "Datasheet for Electronic Transmitters (PT/PDT/FT/TT/LT)"
+         },
+         "format": "Reference",
+         "uid": "8fac3e45b52d11eaadc1185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-INJ-0013 </span></span>",
+            "ID": "18",
+            "REV": "",
+            "TITLE": "Datasheets for Radar Type Level Instruments"
+         },
+         "format": "Reference",
+         "uid": "8fc6a402b52d11eaafee185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-IND-0107 </span></span>",
+            "ID": "70",
+            "REV": "",
+            "TITLE": "Loop Diagram for ESD System"
+         },
+         "format": "Reference",
+         "uid": "8fe32ca9b52d11ea826f185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-IND-0110 </span></span>",
+            "ID": "113",
+            "REV": "",
+            "TITLE": "Wiring Diagram for ESD system"
+         },
+         "format": "Reference",
+         "uid": "9001b131b52d11ea8ccc185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-IND-0104 </span></span><span style=\"color:#414042\"><span style=\"font-size:large\"> </span></span>",
+            "ID": "12",
+            "REV": "",
+            "TITLE": "Cable Block Diagram for ESD System"
+         },
+         "format": "Reference",
+         "uid": "901c3e37b52d11eaaea3185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-INK-0003 </span></span>",
+            "ID": "60",
+            "REV": "",
+            "TITLE": "I/O List for ESD system"
+         },
+         "format": "Reference",
+         "uid": "90371915b52d11ea8fe2185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-INK-0006 </span></span>",
+            "ID": "7",
+            "REV": "",
+            "TITLE": "Alarm and Trip Setting Register"
+         },
+         "format": "Reference",
+         "uid": "9053a1c9b52d11ea954a185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-INH-0003 </span></span>",
+            "ID": "30",
+            "REV": "",
+            "TITLE": "ESD System Philosophy"
+         },
+         "format": "Reference",
+         "uid": "90705188b52d11ea9d64185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYR-0063 </span></span>",
+            "ID": "97",
+            "REV": "",
+            "TITLE": "SIL Assessment Report"
+         },
+         "format": "Reference",
+         "uid": "908ade73b52d11eaa34f185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#632acc0db52911eaaead185680f89476\">Helicopter Crash Study</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "9333c490b75611ea8036185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Boundary": "",
+            "Name": "Disconnectable Buoy"
+         },
+         "format": "SubElement",
+         "uid": "96c6d298b51b11eab7a7185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "Fuel for XX days of navigation?",
+            "Function": "To navigate to a place of safety without external support",
+            "Ref": "4.2"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "981cdcecb74e11eab35a185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Fire",
+            "SubElement": "<a href=\"#c0304c46ad3611ea93019cb6d0bc7fdc\">Hull</a>",
+            "SurvAssurance": "",
+            "SurvCriterion": "Primary steelwork shall be protected against the effects of dimensioning fire scenarios as provided in the DAL specification.<br />Load bearing structures shall be provided with passive fire protection coatings, as defined in the Active and Passive Fire Protection Specification.",
+            "SurvID": "1.1"
+         },
+         "format": "MAHSurvivability",
+         "uid": "9a1c8288acc911ea9f119cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "ICAO",
+            "DOCNO": "ICAO Annex 14 volume 2",
+            "ID": "8",
+            "Link": "",
+            "REV": "4",
+            "TITLE": "Aerodromes - Heliports"
+         },
+         "format": "Reference",
+         "uid": "9c9496b8b52f11eaadee185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-ARD-0003</span></span>",
+            "ID": "108",
+            "REV": "A",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Topside Buildings - Architectural Elevation &amp; Section - Workshop &amp; Laboratory Building</span></span>"
+         },
+         "format": "Reference",
+         "uid": "9da1eea6b52411ea8238185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "ISO",
+            "DOCNO": "ISO 14224",
+            "ID": "20",
+            "Link": "",
+            "REV": "2006",
+            "TITLE": "ISO 14224 <span style=\"color:#414042\"><span style=\"font-size:large\">Petroleum, petrochemical and natural gas industries \u2013 Collection and exchange of reliability and maintenance data for equipment</span></span>"
+         },
+         "format": "Reference",
+         "uid": "9e6aeef6b53111ea8ded185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "IMO",
+            "DOCNO": "",
+            "ID": "24",
+            "Link": "",
+            "REV": "",
+            "TITLE": "Life Saving Appliance (LSA)"
+         },
+         "format": "Reference",
+         "uid": "9f300c83b52811eaabea185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Assurance": "Class verification",
+            "Criteria": "Compliance to Class rule and Tech specification",
+            "Function": "The communication with other vessels, helicopter pilots and onshore control statoins shall be available through reliable and redundant methods.",
+            "Ref": "3.5"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "9f6e703ab74d11eaa8dd185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Boundary": "",
+            "Name": "Winch System"
+         },
+         "format": "SubElement",
+         "uid": "a18638a9b51b11eabfec185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "IMO",
+            "DOCNO": "MARPOL 73/78 Annex I",
+            "ID": "30",
+            "Link": "",
+            "REV": "",
+            "TITLE": "Regulations for the Prevention of Pollution by Oil"
+         },
+         "format": "Reference",
+         "uid": "a1ffbb25b52c11ea8124185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRJ-1003 </span></span>",
+            "ID": "88",
+            "REV": "",
+            "TITLE": "Process Data for Inline Instrument - On/Off Valve, SDV, EDV"
+         },
+         "format": "Reference",
+         "uid": "a4646ae9b52e11eaa5c5185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "Ministry of Petroleum and Natural Gas",
+            "DOCNO": "",
+            "ID": "28",
+            "Link": "",
+            "REV": "2008",
+            "TITLE": "Petroleum and Natural Gas (Safety in Offshore Operations) Rules"
+         },
+         "format": "Reference",
+         "uid": "a46dc9ccb52611ea8547185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYR-0037 </span></span>",
+            "ID": "50",
+            "REV": "",
+            "TITLE": "HAZOP Worksheet Report"
+         },
+         "format": "Reference",
+         "uid": "a48894bdb52e11ea94a6185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRL-0006 </span></span>",
+            "ID": "93",
+            "REV": "",
+            "TITLE": "Production Riser HIPPS Design Basis"
+         },
+         "format": "Reference",
+         "uid": "a4a71941b52e11ea9b1b185680f89476"
+      },
+      {
+         "children": [
+            "c0304c46ad3611ea93019cb6d0bc7fdc",
+            "db7ce2c8ad3611ea9fe39cb6d0bc7fdc",
+            "e3e4c42ead3611eaa5309cb6d0bc7fdc",
+            "bff36b7ab6a611ea8d9f185680f895c0",
+            "d5c6f47eb6a611ea9d2f185680f895c0"
+         ],
+         "data": {
+            "Name": "SubElements<br />"
+         },
+         "format": "SubElements",
+         "uid": "a65ffc52ad3611eaa7c79cb6d0bc7fdc"
+      },
+      {
+         "children": [
+            "a6dfd40ab69e11eabcf9185680f895c0",
+            "a6dfad0fb69e11ea994f185680f895c0",
+            "a6dfad11b69e11ea8c40185680f895c0",
+            "a6dfd407b69e11ea9fc6185680f895c0",
+            "a6dfad12b69e11ea883e185680f895c0",
+            "a6dfad13b69e11eaaa0e185680f895c0"
+         ],
+         "data": {
+            "Goal": "To provide a safe landing and take off area for helicopter operation",
+            "Name": "Helideck",
+            "SCEID": "5"
+         },
+         "format": "Element",
+         "uid": "a6dfad0eb69e11eab965185680f895c0"
+      },
+      {
+         "children": [
+            "a6dfad10b69e11ea9eec185680f895c0",
+            "6ea76e6eb6ab11eaae2a185680f895c0",
+            "b21d71aeb74f11eaa358185680f895c0",
+            "e3e3a3a2b74f11ea9496185680f895c0"
+         ],
+         "data": {
+            "Name": "Functionality"
+         },
+         "format": "Functionality",
+         "uid": "a6dfad0fb69e11ea994f185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Assurance": "- UK CAP 437 \u201cStandards for offshore helicopter landing areas\u201d 8th edition, 2016<br />- ICAO Annex 14 volume 2 \u201cAerodromes - Heliports\u201d 4th edition, 2013<br />- DGCA section 4 series B part 3 \u201cHeliports\u201d revision 4, 2018<br />- DGCA Joint SOP \u201cNight medical evacuation operation(Helicopters offshore)\u201d revision 0, 2018",
+            "Criteria": "The Helideck strength shall comply with CAP 437, CAAP 92-2 and AMSA Marine orders parts 12,14,17 and 60 and shall be suitable for the largest helicopter anticipated to be used at the RUBY FPSO.",
+            "Function": "Helideck structure shall be capable, for the duration of the operational life of the platform, of providing structural support that accommodates the relevant helicopter operations ensuring stability under all foreseeable operational, environmental conditions. Super Puma AS332L2<br />",
+            "Ref": "5.1",
+            "Verification": ""
+         },
+         "format": "FunctionalRequirement",
+         "uid": "a6dfad10b69e11ea9eec185680f895c0"
+      },
+      {
+         "children": [
+            "a6dfd406b69e11ea93e9185680f895c0",
+            "1688173ab75011ea8f2f185680f895c0"
+         ],
+         "data": {
+            "Name": "Availability"
+         },
+         "format": "Availability",
+         "uid": "a6dfad11b69e11ea8c40185680f895c0"
+      },
+      {
+         "children": [
+            "a6dfad16b69e11eaa8e1185680f895c0"
+         ],
+         "data": {
+            "Name": "Dependencies"
+         },
+         "format": "Dependencies",
+         "uid": "a6dfad12b69e11ea883e185680f895c0"
+      },
+      {
+         "children": [
+            "a6dfd40fb69e11ea8788185680f895c0",
+            "0bcf2529b75511ea9cb4185680f895c0",
+            "c971798ab76711ea8914185680f895c0",
+            "d6b63400b76711ea939e185680f895c0",
+            "3509e230b75511ea9dcd185680f895c0"
+         ],
+         "data": {
+            "Name": "References"
+         },
+         "format": "ReferenceList",
+         "uid": "a6dfad13b69e11eaaa0e185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "DepDescription": "The helideck is supported by and connected to the LQ.",
+            "DepSCEName": "<a href=\"#e3e4c42ead3611eaa5309cb6d0bc7fdc\">SCE02 Hydrocarbon containment</a>"
+         },
+         "format": "DependentSCE",
+         "uid": "a6dfad16b69e11eaa8e1185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "5.1",
+            "AvailabilityCriterion": "Helideck design shall minimise the potential environmental effects (turbulence air movement, thermal effects, flammable gas), as far as practicable. Operations restrictions shall be clearly specified in the Helicopter Operations Procedures.",
+            "AvailabiltyAssurance": "Unavailability calculation in accordance with CAP 437",
+            "SubElement": "<a href=\"#a6dfd40bb69e11ea9de4185680f895c0\">Hull</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "a6dfd406b69e11ea93e9185680f895c0"
+      },
+      {
+         "children": [
+            "a6dfd408b69e11eaa07a185680f895c0",
+            "eb049b5ab6ac11eab9e7185680f895c0"
+         ],
+         "data": {
+            "Name": "Survivability"
+         },
+         "format": "Survivability",
+         "uid": "a6dfd407b69e11ea9fc6185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Helicopter crash ",
+            "SubElement": "<a href=\"#c0304c46ad3611ea93019cb6d0bc7fdc\">Hull</a>",
+            "SurvAssurance": "",
+            "SurvCriterion": "The helideck and associated equipment shall be in compliance with CAP 437, CAAP 92-2 and ... to withstand crash load of XX.",
+            "SurvID": "5.1"
+         },
+         "format": "MAHSurvivability",
+         "uid": "a6dfd408b69e11eaa07a185680f895c0"
+      },
+      {
+         "children": [
+            "a6dfd40bb69e11ea9de4185680f895c0",
+            "a6dfd40cb69e11ea9c5a185680f895c0"
+         ],
+         "data": {
+            "Name": "SubElements<br />"
+         },
+         "format": "SubElements",
+         "uid": "a6dfd40ab69e11eabcf9185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Helideck structure"
+         },
+         "format": "SubElement",
+         "uid": "a6dfd40bb69e11ea9de4185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Boundary": "",
+            "Name": "Access Route to the Helideck"
+         },
+         "format": "SubElement",
+         "uid": "a6dfd40cb69e11ea9c5a185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#d838e8d5ad2911eaadcb9cb6d0bc7fdc\">FPSO DESIGN BASIS</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "a6dfd40fb69e11ea8788185680f895c0"
+      },
+      {
+         "children": [
+            "47097ffcb52911ea835e185680f89476",
+            "9c9496b8b52f11eaadee185680f89476",
+            "abda7e03b52311eaaf87185680f89476",
+            "1492ce08b52b11eaa84a185680f89476",
+            "87501e0db52811eaaf2f185680f89476",
+            "c50048f8b52c11ea8fda185680f89476",
+            "7231286ab53311ea863a185680f89476",
+            "adb3fa84b52f11ea8385185680f89476",
+            "ff86b6e9b52c11ea96d7185680f89476",
+            "1b189521b52d11eaacb0185680f89476",
+            "7545fb25b52811eaa7cb185680f89476",
+            "6496ca9fb52311ea988a185680f89476",
+            "fc10f405b52611eab12a185680f89476",
+            "9e6aeef6b53111ea8ded185680f89476",
+            "b418d639b52811eaa3b2185680f89476",
+            "0f9306bdb52311ea9aec185680f89476",
+            "77c85153b53111ea8f06185680f89476",
+            "9f300c83b52811eaabea185680f89476",
+            "20c6f3c8b52911ea9ceb185680f89476",
+            "bb297e81b52611ea9c2e185680f89476",
+            "8aea5701b53311eaba2d185680f89476",
+            "a46dc9ccb52611ea8547185680f89476",
+            "379796afb52911eaae08185680f89476",
+            "a1ffbb25b52c11ea8124185680f89476",
+            "7ce20327b52f11ea8e09185680f89476"
+         ],
+         "data": {
+            "Name": "Rules &amp; Regulations"
+         },
+         "format": "ReferenceList",
+         "uid": "a8db70c0ad2911ea9d6b9cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "API",
+            "DOCNO": "API RP 14G",
+            "ID": "9",
+            "Link": "",
+            "REV": "",
+            "TITLE": "API RP 14G Recommended Practice for Fire Prevention and Control on Open Type Offshore Production Platforms, 2007 "
+         },
+         "format": "Reference",
+         "uid": "abda7e03b52311eaaf87185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Boundary": "",
+            "Name": "Mooring Line"
+         },
+         "format": "SubElement",
+         "uid": "abe18da5b51b11ea9bd1185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "ICAO",
+            "DOCNO": "DGCA section 4 series B part 3",
+            "ID": "14",
+            "Link": "",
+            "REV": "4",
+            "TITLE": "Heliports"
+         },
+         "format": "Reference",
+         "uid": "adb3fa84b52f11ea8385185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Bilge Pump"
+         },
+         "format": "SubElement",
+         "uid": "af4870bab69f11eaa8f3185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-ELD-0001",
+            "ID": "84",
+            "REV": "",
+            "TITLE": "Overall Single Line Diagram"
+         },
+         "format": "Reference",
+         "uid": "afb98caeb53311ea9086185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Assurance": "Compliance to Class rule and Tech specification",
+            "Criteria": "A Differential Global Positioning System (DGPS) shall provide accurate positional information to various systems and the informatin should be forwarded through AIS.",
+            "Function": "The FPSO shal be able to provide exact location for the vessels around it to avoid collision course",
+            "Ref": "3.3"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "b1be9d2cb6a211eaa41e185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "Three(3) access points(120 degrees between each access point) shall be arranged to escape upwind and removable or collapsible handrail will be arranged where exceeding the height limitation.",
+            "Function": "To provide three (3) access points",
+            "Ref": "5.3"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "b21d71aeb74f11eaa358185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "ISO",
+            "DOCNO": "ISO 15544",
+            "ID": "21",
+            "Link": "",
+            "REV": "",
+            "TITLE": "ISO 15544 Petroleum and natural gas industries - Offshore production installations - Requirements and guidelines for emergency response"
+         },
+         "format": "Reference",
+         "uid": "b418d639b52811eaa3b2185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Emergency Bilge Suction (connected to Main Cooling S.W. Pump in E/R)"
+         },
+         "format": "SubElement",
+         "uid": "b7c12ac8b69f11ea8bbb185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "NORSOK",
+            "DOCNO": "NORSOK Z-013",
+            "ID": "26",
+            "Link": "",
+            "REV": "3",
+            "TITLE": "NORSOK Z-013 Risk and emergency preparedness assessment"
+         },
+         "format": "Reference",
+         "uid": "bb297e81b52611ea9c2e185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PPH-0001",
+            "ID": "71",
+            "REV": "",
+            "TITLE": "Material Handling Philosophy"
+         },
+         "format": "Reference",
+         "uid": "bc505205b53011eaa0f6185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Boundary": "Separate room, bulkehead, deck, ...",
+            "Name": "Physical separation/isolation"
+         },
+         "format": "SubElement",
+         "uid": "bff36b7ab6a611ea8d9f185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Hull"
+         },
+         "format": "SubElement",
+         "uid": "c0304c46ad3611ea93019cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-STD-5030",
+            "ID": "79",
+            "Link": "",
+            "REV": "0",
+            "TITLE": "Outfitting Arrangement of FWD Fire Pump Room"
+         },
+         "format": "Reference",
+         "uid": "c1d331b7b52a11ea96c4185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-STD-5027",
+            "ID": "78",
+            "Link": "",
+            "REV": "0",
+            "TITLE": "Outfitting Arrangement in Hull Deck"
+         },
+         "format": "Reference",
+         "uid": "c200f871b52a11ea8e67185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYK-0003",
+            "ID": "69",
+            "Link": "",
+            "REV": "A",
+            "TITLE": "List of Fire Equipment"
+         },
+         "format": "Reference",
+         "uid": "c22919dbb52a11ea8ff4185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-ELD-5501",
+            "ID": "99",
+            "Link": "",
+            "REV": "A",
+            "TITLE": "Single Line Diagram- Hull"
+         },
+         "format": "Reference",
+         "uid": "c2479e5bb52a11ea9827185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYR-0053",
+            "ID": "19",
+            "Link": "",
+            "REV": "B",
+            "TITLE": "Dropped Object Analysis"
+         },
+         "format": "Reference",
+         "uid": "c2644e26b52a11ea83ed185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-ITS-5705",
+            "ID": "106",
+            "Link": "",
+            "REV": "0",
+            "TITLE": "Telecommunication Functional Specification"
+         },
+         "format": "Reference",
+         "uid": "c27eb3e7b52a11eab6c9185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRR-0017</span></span>",
+            "ID": "92",
+            "REV": "B",
+            "TITLE": "Process Simulation Report"
+         },
+         "format": "Reference",
+         "uid": "c3237796b53111ea98e6185680f89476"
+      },
+      {
+         "children": [
+            "c4831779b69e11eab421185680f895c0",
+            "c483176db69e11ea89bb185680f895c0",
+            "c483176fb69e11eaaae3185680f895c0",
+            "c4831776b69e11eaa923185680f895c0",
+            "c4831770b69e11ea8fca185680f895c0",
+            "c4831771b69e11ea9123185680f895c0"
+         ],
+         "data": {
+            "Goal": "<span style=\"font-size:xx-large\">The ballast water system shall provide easy and reliable facilities for ballast water distribution in order to maintain control of the floating offshore installation during routine operations and emergency situations, in terms of stability, heel, trim and draft and ensuring that hull stresses do not exceed the design strength criteria. \u00a0 <br />The bilge system shall provide easy and reliable facilities for pumping from and draining watertight compartments. </span>",
+            "Name": "Ballast and bilge system - based on Goliat FPSO",
+            "SCEID": "6"
+         },
+         "format": "Element",
+         "uid": "c483176cb69e11ea95fb185680f895c0"
+      },
+      {
+         "children": [
+            "c483176eb69e11ea976e185680f895c0",
+            "c4831778b69e11eaa76c185680f895c0",
+            "223acf02b6a011ea8cfe185680f895c0",
+            "7472dc0ab6a011eab209185680f895c0",
+            "cd167c7ab6a011eaa1da185680f895c0"
+         ],
+         "data": {
+            "Name": "Functionality"
+         },
+         "format": "Functionality",
+         "uid": "c483176db69e11ea89bb185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Assurance": "Design calculation",
+            "Criteria": "The capacity of the ballast system shall also comply with \u00a711 of the NMD Ballast regulations.",
+            "Function": "To maintain heel, trim and hull girder loads within normal operating limits and to <br />prevent severe weather bow emergence and re-entry slamming at light drafts without recourse to emergency ballasting of cargo or slops tanks",
+            "Ref": "6.1"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "c483176eb69e11ea976e185680f895c0"
+      },
+      {
+         "children": [
+            "c4831775b69e11eabfea185680f895c0",
+            "257e1108b6a111eaaacf185680f895c0",
+            "03adac0cb75311eaa81d185680f895c0",
+            "363ebf4ab75311eaa55c185680f895c0"
+         ],
+         "data": {
+            "Name": "Availability"
+         },
+         "format": "Availability",
+         "uid": "c483176fb69e11eaaae3185680f895c0"
+      },
+      {
+         "children": [
+            "c4831774b69e11ea83ad185680f895c0"
+         ],
+         "data": {
+            "Name": "Dependencies"
+         },
+         "format": "Dependencies",
+         "uid": "c4831770b69e11ea8fca185680f895c0"
+      },
+      {
+         "children": [
+            "c483177eb69e11ea8878185680f895c0",
+            "4455c414b75511ea9a78185680f895c0"
+         ],
+         "data": {
+            "Name": "References"
+         },
+         "format": "ReferenceList",
+         "uid": "c4831771b69e11ea9123185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "DepDescription": "Watertight integrity",
+            "DepSCEName": "<a href=\"#1646b9eeacc211eaab529cb6d0bc7fdc\">SCE02 Hydrocarbon containment</a>"
+         },
+         "format": "DependentSCE",
+         "uid": "c4831774b69e11ea83ad185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "6.1",
+            "AvailabilityCriterion": "<span style=\"font-size:large\">The ballast control system emergency shutdown loop (logic and final element) shall have a minimum Safety Safety Integrity Level (SIL) rating of SIL 2 in accordance with IEC61508/OLF GL070.</span>",
+            "AvailabiltyAssurance": "SIL???",
+            "SubElement": "<a href=\"#c483177fb69e11eab71f185680f895c0\">#####</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "c4831775b69e11eabfea185680f895c0"
+      },
+      {
+         "children": [
+            "c4831777b69e11eab18b185680f895c0",
+            "005719b4b75411ea8ead185680f895c0",
+            "16bcb6eeb75411ea977e185680f895c0",
+            "64d28394b6a111eab62c185680f895c0"
+         ],
+         "data": {
+            "Name": "Survivability"
+         },
+         "format": "Survivability",
+         "uid": "c4831776b69e11eaa923185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Fire or explosion",
+            "SubElement": "<a href=\"#c483177bb69e11eab8f4185680f895c0\">Hull</a>",
+            "SurvAssurance": "",
+            "SurvCriterion": "An explosion or similar event in the pump room or double bottom shall not lead to an uncontrollable situation due to malfunction of the ballast system. [Copied from Goliat FPSO; looks too demanding]",
+            "SurvID": "6.1"
+         },
+         "format": "MAHSurvivability",
+         "uid": "c4831777b69e11eab18b185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "<span style=\"font-size:large\">The ballast system shall be equipped with at least two independent pumps.</span>",
+            "Function": "To maintain ballasting in the event of failure of one pump",
+            "Ref": "6.2"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "c4831778b69e11eaa76c185680f895c0"
+      },
+      {
+         "children": [
+            "c483177ab69e11eaa824185680f895c0",
+            "c483177bb69e11eab8f4185680f895c0",
+            "c483177fb69e11eab71f185680f895c0",
+            "c4831780b69e11ea86b9185680f895c0",
+            "c4831781b69e11eaab3e185680f895c0",
+            "af4870bab69f11eaa8f3185680f895c0",
+            "b7c12ac8b69f11ea8bbb185680f895c0"
+         ],
+         "data": {
+            "Name": "SubElements<br />"
+         },
+         "format": "SubElements",
+         "uid": "c4831779b69e11eab421185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Ballast Water Tank, Vent and Level Monitoring"
+         },
+         "format": "SubElement",
+         "uid": "c483177ab69e11eaa824185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Boundary": "",
+            "Name": "Ballast Water Ringmain and Pump"
+         },
+         "format": "SubElement",
+         "uid": "c483177bb69e11eab8f4185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#d838e8d5ad2911eaadcb9cb6d0bc7fdc\">FPSO DESIGN BASIS</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "c483177eb69e11ea8878185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Ballast Control System"
+         },
+         "format": "SubElement",
+         "uid": "c483177fb69e11eab71f185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Bilge Well"
+         },
+         "format": "SubElement",
+         "uid": "c4831780b69e11ea86b9185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Boundary": "",
+            "Name": "Flooding Alarm"
+         },
+         "format": "SubElement",
+         "uid": "c4831781b69e11eaab3e185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "",
+            "DOCNO": "",
+            "ID": "12",
+            "Link": "",
+            "REV": " 1986",
+            "TITLE": "Environmental Protection Rules"
+         },
+         "format": "Reference",
+         "uid": "c50048f8b52c11ea8fda185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-ELD-0002",
+            "ID": "98",
+            "REV": "",
+            "TITLE": "Single Line Diagram for Topside AC UPS and Distribution Board"
+         },
+         "format": "Reference",
+         "uid": "c536f694b53311eab818185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRD-0001",
+            "ID": "85",
+            "REV": "",
+            "TITLE": "PFD and UFD"
+         },
+         "format": "Reference",
+         "uid": "c560c5c3b53311eabe96185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Dropped object",
+            "SubElement": "<a href=\"#db7ce2c8ad3611ea9fe39cb6d0bc7fdc\">Topside structure</a>",
+            "SurvCriterion": "Topsides structures shall be designed to absorb the energy from dropped and swinging loads as defined in the DAL specification. ",
+            "SurvID": "1.3"
+         },
+         "format": "MAHSurvivability",
+         "uid": "c6660d9eb6a711ea9701185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#7ce20327b52f11ea8e09185680f89476\">Standards for Offshore Helicopter Landing Areas</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "c971798ab76711ea8914185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "3.4",
+            "AvailabilityCriterion": "Marine navigational aids shall have a self contained battery power supply sufficient to maintain the systems in operation for 96 hours. Reliability is assured by the use of primary and secondary lights and horns.",
+            "AvailabiltyAssurance": "Class rule compliance",
+            "SubElement": "<a href=\"#378135d0b51c11ea9c8d185680f895c0\">Navigational Light</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "c9a470cab6a211eaa2a3185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-MRR-6038",
+            "ID": "51",
+            "REV": "0",
+            "TITLE": "Heading Analysis Report"
+         },
+         "format": "Reference",
+         "uid": "cad6dd09b52711ea8db3185680f89476"
+      },
+      {
+         "children": [
+            "9053a1c9b52d11ea954a185680f89476",
+            "f326faafb52511eab891185680f89476",
+            "62f1939db52911eaa001185680f89476",
+            "f2edc392b52511eaafd9185680f89476",
+            "809cef32b52511eaa236185680f89476",
+            "901c3e37b52d11eaaea3185680f89476",
+            "3cd2607db52e11eab36c185680f89476",
+            "d97e7521b53011eabfd0185680f89476",
+            "43817b3ab52d11eaaa59185680f89476",
+            "8fac3e45b52d11eaadc1185680f89476",
+            "8f85a361b52d11ea8338185680f89476",
+            "8fc6a402b52d11eaafee185680f89476",
+            "c2644e26b52a11ea83ed185680f89476",
+            "0b5c4848b52511eaa489185680f89476",
+            "fdb3464bb52b11ea98d8185680f89476",
+            "f343aa9cb52511eaa575185680f89476",
+            "62b88231b52911eab029185680f89476",
+            "2f888e43b52411eaab21185680f89476",
+            "519b9f0bb52411eaad2c185680f89476",
+            "1a9bfd0fb52f11ea9885185680f89476",
+            "f35e5e48b52511eab733185680f89476",
+            "436120c0b52d11eab72b185680f89476",
+            "3ced146bb52e11ea9741185680f89476",
+            "90705188b52d11ea9d64185680f89476",
+            "5a8901dfb52a11ea99b2185680f89476",
+            "629da741b52911eabaff185680f89476",
+            "5a4df397b52a11ea9881185680f89476",
+            "0a684b25b52511ea933a185680f89476",
+            "808e5fcbb53211ea9f8b185680f89476",
+            "60328709b52411ea924f185680f89476",
+            "f28c8f78b52511ea9132185680f89476",
+            "5a2d74aab52a11ea8546185680f89476",
+            "8131b53db52511ea92e7185680f89476",
+            "0b9b4e37b52511ea866e185680f89476",
+            "0b4ba64db52511ea9b8b185680f89476",
+            "cc474c40b52411eab496185680f89476",
+            "ea6c5ba5b53011ea8509185680f89476",
+            "fd5f32f3b52f11eaa90c185680f89476",
+            "f30a71e8b52511eabb2c185680f89476",
+            "8076a26fb52511ea8884185680f89476",
+            "814c41f7b52511ea8c9c185680f89476",
+            "8168f307b52511ea9fcf185680f89476",
+            "f391f184b52511ea81c2185680f89476",
+            "a48894bdb52e11ea94a6185680f89476",
+            "cad6dd09b52711ea8db3185680f89476",
+            "632acc0db52911eaaead185680f89476",
+            "80f680cdb52511ea87e9185680f89476",
+            "e9f1ab73b52411ea9e29185680f89476",
+            "1a7a44a8b52f11ea94d1185680f89476",
+            "fc8a6630b52411ea9ed2185680f89476",
+            "1ab74d3bb52f11eab58d185680f89476",
+            "1ad75896b52f11eaa285185680f89476",
+            "1a544194b52f11eaae32185680f89476",
+            "90371915b52d11ea8fe2185680f89476",
+            "439e039db52d11ea9a41185680f89476",
+            "fb6f70e4b52b11eab02a185680f89476",
+            "e4a69953b52711ea8d84185680f89476",
+            "3c73cae4b52e11eabad6185680f89476",
+            "80dbcce4b52511ea9846185680f89476",
+            "0b7accd5b52511eabeed185680f89476",
+            "fa9ba146b52311eaaf25185680f89476",
+            "48fb3d05b53211ea8389185680f89476",
+            "c22919dbb52a11ea8ff4185680f89476",
+            "8fe32ca9b52d11ea826f185680f89476",
+            "bc505205b53011eaa0f6185680f89476",
+            "fd872d5bb52f11eab0e3185680f89476",
+            "12c1feaab52c11eaad87185680f89476",
+            "2a43aed3b52811eaa052185680f89476",
+            "0f11d87bb53111eaab8e185680f89476",
+            "0b3277cbb52511ea8954185680f89476",
+            "630c6ea0b52911eab2a3185680f89476",
+            "c200f871b52a11ea8e67185680f89476",
+            "c1d331b7b52a11ea96c4185680f89476",
+            "62d30f21b52911eabd4b185680f89476",
+            "80c118ebb52511ea9b27185680f89476",
+            "f2d1137ab52511ea933b185680f89476",
+            "5a9fbe83b52a11eabb78185680f89476",
+            "afb98caeb53311ea9086185680f89476",
+            "c560c5c3b53311eabe96185680f89476",
+            "8d8873c9b52d11eaa881185680f89476",
+            "dbdb8515b53311ea8b52185680f89476",
+            "a4646ae9b52e11eaa5c5185680f89476",
+            "0afb1545b52511ea8893185680f89476",
+            "0abafdf6b52511eaadff185680f89476",
+            "0adeb2a5b52511eab955185680f89476",
+            "c3237796b53111ea98e6185680f89476",
+            "a4a71941b52e11ea9b1b185680f89476",
+            "fda78697b52f11ea923b185680f89476",
+            "6260c54fb52911ea84d5185680f89476",
+            "3a042629b52a11eaa2b2185680f89476",
+            "908ade73b52d11eaa34f185680f89476",
+            "c536f694b53311eab818185680f89476",
+            "c2479e5bb52a11ea9827185680f89476",
+            "5a6c50f3b52a11ea94c9185680f89476",
+            "fdc26195b52f11eab580185680f89476",
+            "62811e8db52911eaa673185680f89476",
+            "3c9a46ceb52e11eaa961185680f89476",
+            "43352ff9b52d11eaa99f185680f89476",
+            "3cb5d7e5b52e11ea9443185680f89476",
+            "c27eb3e7b52a11eab6c9185680f89476",
+            "8b28e1a0b52411eab2a8185680f89476",
+            "9da1eea6b52411ea8238185680f89476",
+            "7d2505cbb52411eabb9f185680f89476",
+            "6e0e6512b52411ea94be185680f89476",
+            "f3773d85b52511ea9271185680f89476",
+            "0b179da7b52511ea8b75185680f89476",
+            "9001b131b52d11ea8ccc185680f89476"
+         ],
+         "data": {
+            "Name": "Documents &amp; Drawings"
+         },
+         "format": "ReferenceList",
+         "uid": "cbd8dcdbad2911ea802e9cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PEL-0001</span></span>",
+            "ID": "42",
+            "REV": "B",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">FPSO Design Basis</span></span>"
+         },
+         "format": "Reference",
+         "uid": "cc474c40b52411eab496185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "<span style=\"font-size:large\">An effective bilge system shall be provided for draining watertight compartments, e.g. primary bilge pump and emergency bilge pump. </span>",
+            "Function": "To drain watertight compartments",
+            "Ref": "6.5"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "cd167c7ab6a011eaa1da185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "Shuttle tanker positioning system ... accuracy? warning upon proximity?",
+            "Function": "The positon of the shuttle tanker shall be monitored.",
+            "Ref": "3.6"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "cdcbc476b74d11ea871e185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Ship collision",
+            "SubElement": "<a href=\"#c0304c46ad3611ea93019cb6d0bc7fdc\">Hull</a>",
+            "SurvCriterion": "The hull structure shall survive damage from dimensioning boat impact, with post damage survivability sufficient to support the maximum topsides load under defined storm conditions. Boat collision impact to be withstood has been defined in the DAL specification. ",
+            "SurvID": "1.4"
+         },
+         "format": "MAHSurvivability",
+         "uid": "d4fcb194b6a711ea8f01185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Watertight door"
+         },
+         "format": "SubElement",
+         "uid": "d5c6f47eb6a611ea9d2f185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#9c9496b8b52f11eaadee185680f89476\">Aerodromes - Heliports</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "d6b63400b76711ea939e185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRR-0015",
+            "ID": "14",
+            "REV": "",
+            "TITLE": "Chemical Injection System Design Report"
+         },
+         "format": "Reference",
+         "uid": "d97e7521b53011eabfd0185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "Topside structure"
+         },
+         "format": "SubElement",
+         "uid": "db7ce2c8ad3611ea9fe39cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRD-0100",
+            "ID": "87",
+            "REV": "",
+            "TITLE": "Piping and Instrument Diagram of Topside"
+         },
+         "format": "Reference",
+         "uid": "dbdb8515b53311ea8b52185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#d64abd8dad2911eaabb19cb6d0bc7fdc\">Basis of Design for T-S Structure</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "e0e5e35ead3711eaa0079cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "Flush type tie-down point shall be provided on helideck surface of landing area and parking area. Drain pipe shall be fitted to each tie down point and shall be connected to gutter drain line.<br />One (1) set of illuminated windsock and supporting post shall be provided. Supporting post shall be provided with means of access for maintenance of windsock and light.<br />Glide path indicator(GPI)/Helicopter approach path indicator(HAPI) for day and night medevac shall be provided",
+            "Function": "To provide navigational aids",
+            "Ref": "5.4"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "e3e3a3a2b74f11ea9496185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "LQ structure"
+         },
+         "format": "SubElement",
+         "uid": "e3e4c42ead3611eaa5309cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYR-0036",
+            "ID": "63",
+            "REV": "B",
+            "TITLE": "Identification of Safety Critical Element"
+         },
+         "format": "Reference",
+         "uid": "e4a69953b52711ea8d84185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-HVH-0001</span></span>",
+            "ID": "54",
+            "REV": "B",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">HVAC Control Philosophy Topside</span></span>"
+         },
+         "format": "Reference",
+         "uid": "e9f1ab73b52411ea9e29185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRR-0016",
+            "ID": "43",
+            "REV": "",
+            "TITLE": "Fuel Gas System Design Report"
+         },
+         "format": "Reference",
+         "uid": "ea6c5ba5b53011ea8509185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "MAH": "Fire after helicopter crash",
+            "SubElement": "<a href=\"#a6dfd40bb69e11ea9de4185680f895c0\">Helideck structure</a>",
+            "SurvCriterion": "A deck integrated firefighting system(DIFFs) shall be provided for the helideck",
+            "SurvID": "5.2"
+         },
+         "format": "MAHSurvivability",
+         "uid": "eb049b5ab6ac11eab9e7185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#d838e8d5ad2911eaadcb9cb6d0bc7fdc\">FPSO DESIGN BASIS</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "ec05525aad3711eaa7659cb6d0bc7fdc"
+      },
+      {
+         "children": [
+            "1646b9eeacc211eaab529cb6d0bc7fdc",
+            "33b9f860b51b11eaa7e1185680f895c0",
+            "378135bbb51c11ea8ad4185680f895c0",
+            "259937fbb52111ea9466185680f895c0",
+            "a6dfad0eb69e11eab965185680f895c0",
+            "c483176cb69e11ea95fb185680f895c0",
+            "a8db70c0ad2911ea9d6b9cb6d0bc7fdc",
+            "cbd8dcdbad2911ea802e9cb6d0bc7fdc"
+         ],
+         "data": {
+            "Name": "RUBY FPSO"
+         },
+         "format": "DEFAULT",
+         "uid": "ed7edb6eacc111ea966b9cb6d0bc7fdc"
+      },
+      {
+         "children": [],
+         "data": {
+            "Function": "The RUBY FPSO shall have a service life of 20 years",
+            "Ref": "1.4"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "eee63458b6a811eaafbb185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#f3773d85b52511ea9271185680f89476\">Turret Fire Risk Analysis</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "f26fb2e4b75511eaad6e185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYL-0003</span></span>",
+            "ID": "37",
+            "REV": "B",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Fire Protection Design Basis</span></span>"
+         },
+         "format": "Reference",
+         "uid": "f28c8f78b52511ea9132185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-STD-0909-01</span></span>",
+            "ID": "82",
+            "REV": "A",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Overall Piperack Support Layout For Topsides (Plan &amp; Elevation)</span></span>"
+         },
+         "format": "Reference",
+         "uid": "f2d1137ab52511ea933b185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-STL-0001</span></span>",
+            "ID": "10",
+            "REV": "B",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Basis of Design for Topside Structure</span></span>"
+         },
+         "format": "Reference",
+         "uid": "f2edc392b52511eaafd9185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-MRD-6001</span></span>",
+            "ID": "45",
+            "REV": "A",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">General Arrangement</span></span>"
+         },
+         "format": "Reference",
+         "uid": "f30a71e8b52511eabb2c185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-ARD-5802</span></span>",
+            "ID": "8",
+            "Link": "",
+            "REV": "0",
+            "TITLE": "Arrangement &amp; Detail Fire Integrity Plan"
+         },
+         "format": "Reference",
+         "uid": "f326faafb52511eab891185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-STD-5033</span></span>",
+            "ID": "22",
+            "REV": "C",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Engine Room Arrangement</span></span>"
+         },
+         "format": "Reference",
+         "uid": "f343aa9cb52511eaa575185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-ARD-5817</span></span>",
+            "ID": "27",
+            "REV": "C",
+            "TITLE": "Escape Ways Layout for LQ and Helid-Deck "
+         },
+         "format": "Reference",
+         "uid": "f35e5e48b52511eab733185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C002-440005618-SYR-0002</span></span>",
+            "ID": "111",
+            "REV": "",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">Turret Fire Risk Analysis</span></span>"
+         },
+         "format": "Reference",
+         "uid": "f3773d85b52511ea9271185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYR-0027</span></span>",
+            "ID": "49",
+            "REV": "0",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">HAZID Report</span></span>"
+         },
+         "format": "Reference",
+         "uid": "f391f184b52511ea81c2185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#62811e8db52911eaa673185680f89476\">Technical Full Specification for Hull</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "f616f0f1b75411eab3d7185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#de08f7b3b52011ea9d6c185680f895c0\">FPSO DESIGN BASIS</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "f63ac095b52011ea9a18185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "4.2",
+            "AvailabilityCriterion": "Black start shall be available???",
+            "AvailabiltyAssurance": "Compressed air for XX times of ...",
+            "SubElement": "<a href=\"#25993809b52111eaa1d1185680f895c0\">Main engine</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "f65491dcb74e11eaa5f3185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Function": "The position, angle and tension of each mooring line shall be monitored and recorded. Alarms shall be raised in the CCR in the event of design operating limitations being exceeded",
+            "Ref": "2.4"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "f80d29b4b6a911ea918f185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AvID": "3.3",
+            "AvailabilityCriterion": "Communication with vessels, helicopters, headquarter onshore shall be available continuously.",
+            "AvailabiltyAssurance": "Class rule compliance",
+            "SubElement": "<a href=\"#378135ccb51c11ea8552185680f895c0\">External Marine Communication</a>"
+         },
+         "format": "SubElementAvailability",
+         "uid": "f83e2fcab51c11eaaecd185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "Class rule / Available upon a single failure",
+            "Function": "To provide visual signal for navigational aid in a reliable manner",
+            "Ref": "3.7"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "f86420b0b74d11eaa7e5185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "Name": "<a href=\"#62811e8db52911eaa673185680f89476\">Technical Full Specification for Hull</a>"
+         },
+         "format": "LinkToReference",
+         "uid": "fa81b331b75411ea96f4185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PPH-0004</span></span>",
+            "ID": "67",
+            "REV": "B",
+            "TITLE": "Layout Philosophy "
+         },
+         "format": "Reference",
+         "uid": "fa9ba146b52311eaaf25185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-INH-0002",
+            "ID": "62",
+            "Link": "",
+            "REV": "C",
+            "TITLE": "ICSS Philosophy"
+         },
+         "format": "Reference",
+         "uid": "fb6f70e4b52b11eab02a185680f89476"
+      },
+      {
+         "children": [
+            "13bcfed3b52711ea8ba4185680f89476",
+            "1929cb4eb52711eaa62d185680f89476"
+         ],
+         "data": {
+            "AUTHOR": "ISO",
+            "DOCNO": "ISO 14122",
+            "ID": "19",
+            "Link": "",
+            "REV": "",
+            "TITLE": "ISO 14122 Safety of Machinery \u2013 Permanent means of access to machinery "
+         },
+         "format": "Reference",
+         "uid": "fc10f405b52611eab12a185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "Criteria": "Application of normal factors of safety, in accordance with the requirements the associated recognised codes and standards",
+            "Function": "The topsides structures shall support the equipment and bulk materials making up the topsides facilities for all foreseeable operational and environmental load conditions.",
+            "Ref": "1.5"
+         },
+         "format": "FunctionalRequirement",
+         "uid": "fc562a46b6a811ea8f2f185680f895c0"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "<span style=\"color:#414042\"><span style=\"font-size:large\">2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-HVL-0001</span></span>",
+            "ID": "56",
+            "REV": "B",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">HVAC Design Basis - Topside</span></span>"
+         },
+         "format": "Reference",
+         "uid": "fc8a6630b52411ea9ed2185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-MES-0001",
+            "ID": "44",
+            "REV": "",
+            "TITLE": "Functional Specification for Main Power Generator"
+         },
+         "format": "Reference",
+         "uid": "fd5f32f3b52f11eaa90c185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-MEJ-0064",
+            "ID": "72",
+            "REV": "",
+            "TITLE": "MDS for Gas Turbine Generator"
+         },
+         "format": "Reference",
+         "uid": "fd872d5bb52f11eab0e3185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRC-0003",
+            "ID": "94",
+            "REV": "0",
+            "TITLE": "PSV Relief Load Calculation"
+         },
+         "format": "Reference",
+         "uid": "fda78697b52f11ea923b185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-SYR-0039",
+            "ID": "21",
+            "Link": "",
+            "REV": "A",
+            "TITLE": "Emergency System Survivability Assessment"
+         },
+         "format": "Reference",
+         "uid": "fdb3464bb52b11ea98d8185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "SHI",
+            "DOCNO": "2001-KGD6-D2-PF-OF-MJ1F-C000-440005618-PRH-0001",
+            "ID": "101",
+            "REV": "",
+            "TITLE": "Sparing Philosophy"
+         },
+         "format": "Reference",
+         "uid": "fdc26195b52f11eab580185680f89476"
+      },
+      {
+         "children": [],
+         "data": {
+            "AUTHOR": "IEC",
+            "DOCNO": "IEC 61508",
+            "ID": "15",
+            "Link": "",
+            "REV": "2010",
+            "TITLE": "<span style=\"color:#414042\"><span style=\"font-size:large\">IEC 61508 </span></span><span style=\"color:#414042\"><span style=\"font-size:large\">Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related System</span></span>"
+         },
+         "format": "Reference",
+         "uid": "ff86b6e9b52c11ea96d7185680f89476"
+      }
+   ],
+   "properties": {
+      "printcolumnspace": 0.39,
+      "printfont": "Frutiger LT 45 Light,10,-1,5,50,0,0,0,0,0,Regular",
+      "printheadertext": "RUBY FPSO/Performance Standard/Rev.A",
+      "printlines": false,
+      "printmargins": [
+         0.59,
+         0.59,
+         0.5,
+         0.59
+      ],
+      "printpapersize": "A4",
+      "printportrait": false,
+      "tlversion": "3.1.2",
+      "topnodes": [
+         "ed7edb6eacc111ea966b9cb6d0bc7fdc"
+      ]
+   }
+}
