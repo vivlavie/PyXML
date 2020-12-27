@@ -1,0 +1,18 @@
+<PartNumber xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:op="http://sernaferna.com/OrderProcessingSystem"
+            xlink:type="extended">
+  <item>
+    <part-number>E16-25A</part-number>
+    <description>Production-Class Widget</description>
+  </item>
+  <salesperson xlink:type="locator"
+               xlink:href="http://sernaferna.com/JohnDoe.xml"
+               xlink:role="op:salesperson"
+               xlink:title="Salesperson"/>
+  <order xlink:type="locator"
+         xlink:href="http://sernaferna.com/order256.xml"
+         xlink:role="op:order"
+         xlink:title="Order"/>
+</PartNumber>
+
+

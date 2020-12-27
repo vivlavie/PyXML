@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PerformanceStandard>
+<Element>
+<Goal>To maintain the load bearing fuction up to the design accidental load</Goal>
+<Name>Structure</Name>
+<SCEID>1</SCEID>
+<SubElement>
+<Name>Hull</Name>
+</SubElement>
+<SubElement>
+<Name>Topside structure</Name>
+</SubElement>
+<SubElement>
+<Name>LQ structure</Name>
+</SubElement>
+<SubElement>
+<Boundary>Separate room, bulkehead, deck, ...</Boundary>
+<Name>Physical separation/isolation</Name>
+</SubElement>
+<SubElement>
+<Name>Watertight door</Name>
+</SubElement>
+<Functionality>
+<FunctionalRequirement>
+<Criteria>Motion criteria stated in design bases shall not be exceeded.  </Criteria>
+<Function>The Hull structure and anchoring mechanism shall be sufficient to support the topside facilities, appurtenances (i.e. risers, conductors, caissons, ) and topside structures (flare, helideck) ensuring stability under all foreseeable operational, environmental and accidental conditions.</Function>
+<Ref>1.1</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>The design codes and load analysis cases have been specified for the topsides in the Structural Design Brief and for LQ.&lt;br /&gt;</Criteria>
+<Function>The primary structures shall be built to a recognised national or international standard addressing fatigue, corrosion protection, defects, subsidence, redundancy and accidental loading.</Function>
+<Ref>1.2</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>Criteria stated in design bases shall not be exceeded.</Criteria>
+<Function>Topside support structures shall be capable of supporting all necessary loads under normal conditions and in the event of external loading caused by extreme environmental conditions.</Function>
+<Ref>1.3</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Function>The RUBY FPSO shall have a service life of 20 years</Function>
+<Ref>1.4</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>Application of normal factors of safety, in accordance with the requirements the associated recognised codes and standards</Criteria>
+<Function>The topsides structures shall support the equipment and bulk materials making up the topsides facilities for all foreseeable operational and environmental load conditions.</Function>
+<Ref>1.5</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>Acceptable recognised vibration limits to prevent structural damage???</Criteria>
+<Function>Vibration on the structure shall be controlled within the acceptable recognized limit.</Function>
+<Ref>1.6</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>Separation/isolation shall be sufficient to preventing an escalation considering probable effect distance or possiblity of successive collapse of structure</Criteria>
+<Function>To provide safety by distance or seprartion  to prevent an escalation of an initiating event</Function>
+<Ref>1.7</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Assurance>Type certification of the watertight door</Assurance>
+<Criteria>Waterhead to be contained checked against probable accident?</Criteria>
+<Function>To prevent flooding in an area from spreading beyond the area of accident</Function>
+<Ref>1.8</Ref>
+</FunctionalRequirement>
+</Functionality>
+</Element>
+<Element>
+<Goal>To maintain the FPSO position and provide reliable connection to flow lines. The system must enable the FPSO to weathervane and to withstand all design environmental conditions sufficiently to maintain riser and umbilical integrity</Goal>
+<Name>Turret mooring system</Name>
+<SCEID>2</SCEID>
+<SubElement>
+<Name>Turret Cylinder Structure (Outer Wall)</Name>
+</SubElement>
+<SubElement>
+<Name>Turret Swivel Support Structure (Inner Support Structure)</Name>
+</SubElement>
+<SubElement>
+<Name>Turret Geostationary Structure (Swivel, Bearing)</Name>
+</SubElement>
+<SubElement>
+<Name>Explosion Relief Panel</Name>
+</SubElement>
+<SubElement>
+<Name>Tension Monitoring system</Name>
+</SubElement>
+<SubElement>
+<Name>Passive Weathervaning system</Name>
+</SubElement>
+<SubElement>
+<Name>Disconnectable Buoy</Name>
+</SubElement>
+<SubElement>
+<Name>Winch System</Name>
+</SubElement>
+<SubElement>
+<Name>Mooring Line</Name>
+</SubElement>
+<Functionality>
+<FunctionalRequirement>
+<Assurance>Test???</Assurance>
+<Criteria>Offsets during single and double line failure shall not cause the risers to fail and interference between riser and mooring shall be avoided</Criteria>
+<Function>To maintain the FPSO position</Function>
+<Ref>2.1</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Assurance>Compliance to API RP 2SK</Assurance>
+<Criteria>The mooring system shall be designed to remain connected all year round and through all the ranges of Metocean data specified.</Criteria>
+<Function>To provide reliable connection to flow lines</Function>
+<Ref>2.2</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Function>The FPSO shall be freely weathervaning using a passive turret mooring system, with the turret located in front of product tanks.</Function>
+<Ref>2.3</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Function>The position, angle and tension of each mooring line shall be monitored and recorded. Alarms shall be raised in the CCR in the event of design operating limitations being exceeded</Function>
+<Ref>2.4</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Function>Turret structure (outerwall) shall withstand design explosion load with adequate explosion load relief method</Function>
+<Ref>2.5</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Function>TMS shall be disconnectable in a reliable manner to allow FPSO to leave upon extreme environment</Function>
+<Ref>2.6</Ref>
+</FunctionalRequirement>
+</Functionality>
+</Element>
+<Element>
+<Goal>To monitor vessel actvities and provide adequate information to prevent collisio and navigational aide for vessels and helicopter</Goal>
+<Name>Ship collision avoidance &amp;amp; navigation aid</Name>
+<SCEID>3</SCEID>
+<SubElement>
+<Name>Radar</Name>
+</SubElement>
+<SubElement>
+<Name>Automatic Identification System (AIS)</Name>
+</SubElement>
+<SubElement>
+<Name>External Marine Communication</Name>
+</SubElement>
+<SubElement>
+<Name>Navigational Light</Name>
+</SubElement>
+<SubElement>
+<Name>Shuttle Tanker Positioning System</Name>
+</SubElement>
+<SubElement>
+<Boundary> Visual Signal System (Navigation Aid System and Warning Light)</Boundary>
+<Name>Visual Signal System (Navigation Aid System and Warning Light)</Name>
+</SubElement>
+<Functionality>
+<FunctionalRequirement>
+<Criteria>The system shall present vessel movements on graphics that are based on marine charts. The system shall provide the facility to track and identify the vessels, initiate alarms should the vessels enter pre-defined exclusion zones or be on course that would in any way present a risk to the installation or the operation in the proximity of the platform. The information from the tracking system may be integrated with data from other installations and made available to other agencies. As such the system shall have the capability to store and hand off the data.</Criteria>
+<Function>There shall be a collision monitoring system able to detect a vessel on collision course.</Function>
+<Ref>3.1</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>The radar system shall be able to register the course and speed of the object, and plotting facilities shall be included, e.g. automatic radar, plotting aid. Radar signals shall be transmitted to unit responsible for surveillance. The RADAR system shall be interfaced with 'StatoilHydro Surveillance RADAR system' (Statoil Marine VTS)</Criteria>
+<Function>To register the course and speed of the object</Function>
+<Ref>3.2</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>A Differential Global Positioning System (DGPS) shall provide accurate positional information to various systems </Criteria>
+<Function>To provide exact location of RUBY FPSO for vessels to avoid collision course</Function>
+<Ref>3.3</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>Two (2) complete sets of radar shall be provided, with long range (S band) and accuracy (X band) features fitted with automatic radar plotting aids (ARPA) and interfaced with Gyrocompass, Automatic Identification system (AIS), DGPS systems to provide trajectory predictions and collision avoidance alerts for safety marine operation.&lt;br /&gt;- The radars shall display in the radio room and Offloading Control Room&lt;br /&gt;- The radar shall give all round coverage around the FPSO with minimum blind sector allowed by classification rules, and with a detection distance of 30 nautical Miles from the FPSO. &lt;br /&gt;- Radar antennas shall be separated and placed to prevent any shadow effect.&lt;br /&gt;- Radars components shall comply with Electromagnetic Compatibility Regulations&lt;br /&gt;- The radar shall detect crafts 5-10 nm (not less than 5 nm)</Criteria>
+<Function>To provide interfaces between RADAR and other systems to provide trajectory predictions and collision avoidance alerts for safety marine operation.</Function>
+<Ref>3.4</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Assurance>Class verification</Assurance>
+<Criteria>Compliance to Class rule and Tech specification</Criteria>
+<Function>To ensure communication with other vessels, helicopter pilots and onshore control statoins</Function>
+<Ref>3.5</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>Shuttle tanker positioning system ... accuracy? warning upon proximity?</Criteria>
+<Function>To monitor the positon of the shuttle tanker</Function>
+<Ref>3.6</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>Class rule / Available upon a single failure</Criteria>
+<Function>To provide visual signal for navigational aid in a reliable manner</Function>
+<Ref>3.7</Ref>
+</FunctionalRequirement>
+</Functionality>
+</Element>
+<Element>
+<Goal>To provide propulsion and steering to move away from the operatoin field upon harsh weather or to move to a new field without external support</Goal>
+<Name>Propulsion</Name>
+<SCEID>4</SCEID>
+<SubElement>
+<Name>Main engine</Name>
+</SubElement>
+<SubElement>
+<Name>Fuel oil supply system</Name>
+</SubElement>
+<SubElement>
+<Name>Steering gear system</Name>
+</SubElement>
+<Functionality>
+<FunctionalRequirement>
+<Criteria>Cold start???</Criteria>
+<Function>&lt;span style="font-size:large"&gt;To mobilize FPSO without external supprt&lt;/span&gt;</Function>
+<Ref>4.1</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>Fuel for XX days of navigation?</Criteria>
+<Function>To navigate to a place of safety without external support</Function>
+<Ref>4.2</Ref>
+</FunctionalRequirement>
+</Functionality>
+</Element>
+<Element>
+<Goal>To provide a safe landing and take off area for helicopter operation</Goal>
+<Name>Helideck</Name>
+<SCEID>5</SCEID>
+<SubElement>
+<Name>Helideck structure</Name>
+</SubElement>
+<SubElement>
+<Name>Access Route to the Helideck</Name>
+</SubElement>
+<Functionality>
+<FunctionalRequirement>
+<Assurance>- UK CAP 437 “Standards for offshore helicopter landing areas” 8th edition, 2016&lt;br /&gt;- ICAO Annex 14 volume 2 “Aerodromes - Heliports” 4th edition, 2013&lt;br /&gt;- DGCA section 4 series B part 3 “Heliports” revision 4, 2018&lt;br /&gt;- DGCA Joint SOP “Night medical evacuation operation(Helicopters offshore)” revision 0, 2018</Assurance>
+<Criteria>The Helideck strength shall comply with CAP 437, CAAP 92-2 and AMSA Marine orders parts 12,14,17 and 60 and shall be suitable for the largest helicopter anticipated to be used at the RUBY FPSO.</Criteria>
+<Function>Helideck structure shall be capable, for the duration of the operational life of the platform, of providing structural support that accommodates the relevant helicopter operations ensuring stability under all foreseeable operational, environmental conditions. Super Puma AS332L2&lt;br /&gt;</Function>
+<Ref>5.1</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>The Helideck shall be capable of withstanding heavy normal landing and emergency landing as specified in CAP 437, based on the largest helicopter anticipated to be used at the RUBY FPSO.</Criteria>
+<Function>To withstand impact load</Function>
+<Ref>5.2</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>Three(3) access points(120 degrees between each access point) shall be arranged to escape upwind and removable or collapsible handrail will be arranged where exceeding the height limitation.</Criteria>
+<Function>To provide three (3) access points</Function>
+<Ref>5.3</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>Flush type tie-down point shall be provided on helideck surface of landing area and parking area. Drain pipe shall be fitted to each tie down point and shall be connected to gutter drain line.&lt;br /&gt;One (1) set of illuminated windsock and supporting post shall be provided. Supporting post shall be provided with means of access for maintenance of windsock and light.&lt;br /&gt;Glide path indicator(GPI)/Helicopter approach path indicator(HAPI) for day and night medevac shall be provided</Criteria>
+<Function>To provide navigational aids</Function>
+<Ref>5.4</Ref>
+</FunctionalRequirement>
+</Functionality>
+</Element>
+<Element>
+<Goal>&lt;span style="font-size:x-large"&gt;The ballast water system shall provide easy and reliable facilities for ballast water distribution in order to maintain control of the floating offshore installation during routine operations and emergency situations, in terms of stability, heel, trim and draft and ensuring that hull stresses do not exceed the design strength criteria.&lt;/span&gt; &lt;span style="font-size:x-large"&gt; &lt;/span&gt; &lt;br /&gt;&lt;span style="font-size:x-large"&gt;The bilge system shall provide easy and reliable facilities for pumping from and draining watertight compartments.&lt;/span&gt; </Goal>
+<Name>Ballast and bilge system - based on Goliat FPSO</Name>
+<SCEID>6</SCEID>
+<SubElement>
+<Name>Ballast Water Tank, Vent and Level Monitoring</Name>
+</SubElement>
+<SubElement>
+<Name>Ballast Water Ringmain and Pump</Name>
+</SubElement>
+<SubElement>
+<Name>Ballast Control System</Name>
+</SubElement>
+<SubElement>
+<Name>Bilge Well</Name>
+</SubElement>
+<SubElement>
+<Name>Flooding Alarm</Name>
+</SubElement>
+<SubElement>
+<Name>Bilge Pump</Name>
+</SubElement>
+<SubElement>
+<Name>Emergency Bilge Suction (connected to Main Cooling S.W. Pump in E/R)</Name>
+</SubElement>
+<Functionality>
+<FunctionalRequirement>
+<Assurance>&lt;span style="font-size:x-large"&gt;Design calculation&lt;/span&gt;</Assurance>
+<Criteria>&lt;span style="font-size:x-large"&gt;The capacity of the ballast system shall also comply with §11 of the NMD Ballast regulations.&lt;/span&gt;</Criteria>
+<Function>To maintain heel, trim and hull girder loads within normal operating limits and to &lt;br /&gt;prevent severe weather bow emergence and re-entry slamming at light drafts without recourse to emergency ballasting of cargo or slops tanks</Function>
+<Ref>6.1</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>&lt;span style="font-size:large"&gt;The ballast system shall be equipped with at least two independent pumps.&lt;/span&gt;</Criteria>
+<Function>To maintain ballasting in the event of failure of one pump</Function>
+<Ref>6.2</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Assurance>Class rule</Assurance>
+<Criteria>&lt;span style="font-size:large"&gt;The ballast system shall be arranged with cross connections ensuring that ballast water can be cross fed from one side of the vessel to the other as a contingency measure.&lt;/span&gt; </Criteria>
+<Function>&lt;span style="font-size:large"&gt;To cross-feed ballast water from one side of the vessel to the other &lt;/span&gt;</Function>
+<Ref>6.3</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>&lt;span style="font-size:large"&gt;Ballast system valves shall be designed fail-to-close&lt;/span&gt;</Criteria>
+<Function>&lt;span style="font-size:large"&gt;To provide fail-safe function for the ballast valves&lt;/span&gt;</Function>
+<Ref>6.4</Ref>
+</FunctionalRequirement>
+<FunctionalRequirement>
+<Criteria>&lt;span style="font-size:large"&gt;An effective bilge system shall be provided for draining watertight compartments, e.g. primary bilge pump and emergency bilge pump. &lt;/span&gt;</Criteria>
+<Function>To drain watertight compartments</Function>
+<Ref>6.5</Ref>
+</FunctionalRequirement>
+</Functionality>
+</Element>
+</PerformanceStandard>

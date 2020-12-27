@@ -1,0 +1,22 @@
+<people>
+  <person name="John">
+    <phone>(555)555-1212</phone>
+    <phone>(555)555-1213</phone>
+  </person>
+  <person name="David">
+    <phone>(555)555-1214</phone>
+  </person>
+  <person name="Andrea">
+    <phone>(555)555-1215</phone>
+    <phone>(555)555-1216</phone>
+    <phone>(555)555-1217</phone>
+  </person>
+  <person name="Ify">
+    <phone>(555)555-1218</phone>
+    <phone>(555)555-1219</phone>
+  </person>
+  <!--more people could follow-->
+</people>
+
+
+

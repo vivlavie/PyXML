@@ -1,0 +1,7 @@
+<?xml-stylesheet type="text/css" href="note.css" ?>
+<document>
+<body>
+	<note type="tip"> Tip </note>
+	<note type="resource"> Resource </note>
+</body>
+</document>

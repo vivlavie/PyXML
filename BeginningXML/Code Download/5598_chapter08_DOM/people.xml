@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<people>
+  <programmers>
+    <name>John</name>
+    <name>Bill</name>
+    <name>Sally</name>
+    <name>Joanne</name>
+  </programmers>
+  <managers>
+    <name>Fred</name>
+    <name>Mary</name>
+    <name>Wilma</name>
+    <name>Sally-Anne</name>
+    <name>John</name>
+  </managers>
+</people>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE name [
+  <!ELEMENT name (first, middle, last)>
+  <!ELEMENT first (#PCDATA)>
+  <!ELEMENT middle (#PCDATA)>
+  <!ELEMENT last (#PCDATA)>
+]>
+<name>
+  <first>John</first>
+  <middle>Fitzgerald</middle>
+  <last>Doe</last>
+</name>

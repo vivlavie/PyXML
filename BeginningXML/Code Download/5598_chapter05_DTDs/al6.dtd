@@ -1,0 +1,30 @@
+<!NOTATION bmp SYSTEM "explorer.exe">
+<!ENTITY DareToBeStupidCoverPhoto SYSTEM "cover1.bmp" NDATA bmp>
+<!ELEMENT catalog (CD | cassette | record | MP3)*>
+<!ATTLIST catalog version CDATA #FIXED "1.0"
+                  name CDATA #IMPLIED >
+<!ENTITY % albumContentModel "(artist, title, genre, date-released, song+)">
+<!ELEMENT CD %albumContentModel;>
+<!ELEMENT cassette %albumContentModel;>
+<!ELEMENT record %albumContentModel;>
+<!ELEMENT MP3 %albumContentModel;>
+<!ATTLIST CD images ENTITIES #IMPLIED>
+<!ATTLIST cassette images ENTITIES #IMPLIED>
+<!ATTLIST record images ENTITIES #IMPLIED>
+<!ATTLIST MP3 images ENTITIES #IMPLIED>
+<!ELEMENT artist (#PCDATA)>
+<!ATTLIST artist gender (male | female) "male">
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT date-released (#PCDATA)>
+<!ELEMENT song (title, length, parody, lyrics)>
+<!ELEMENT length (minutes, seconds)>
+<!ELEMENT minutes (#PCDATA)>
+<!ELEMENT seconds (#PCDATA)>
+<!ELEMENT parody (title, artist)?>
+<!ELEMENT lyrics (#PCDATA)>
+<!ENTITY LikeASurgeon SYSTEM "http://www.yankovic.org/WeirdAl/c_Dare_To_Be_Stupid/like_a_surgeon.txt">
+<!ENTITY DareToBeStupid SYSTEM "http://www.yankovic.org/WeirdAl/c_Dare_To_Be_Stupid/dare_to_be_stupid.txt">
+<!ENTITY WeirdAl '"Weird Al" Yankovic'>
+
+

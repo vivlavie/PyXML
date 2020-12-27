@@ -1,0 +1,59 @@
+<?xml-stylesheet type="text/css" href="article.css"?>
+<document xmlns:xlink="http://www.w3.org/1999/xlink">
+<banner>Recursions and Ruminations</banner>
+  <page>
+    <header>
+      <title>Will Web Services Break the Semantic Web?</title>
+      <author>Kurt Cagle</author>
+      <primaryLink>http://www.kurtcagle.net/articles/brokenSemantics.xml
+                                                                 </primaryLink>
+    </header>
+    <body>
+      <para>The Semantic Web has been a central concept in web development since
+        Tim Berners Lee's seminal paper on the subject, <jump 
+        xlink:href="http://www.w3.org/DesignIssues/Semantic.html"
+        xlink:type="simple" xlink:show="replace">A roadmap to the Semantic
+        Web</jump> in 1998 (with a more popular description of the Semantic Web
+        in <jump xlink:href="http://www.scientificamerican.com/2001/0501issue/
+       0501berners-lee.html" xlink:type="simple" xlink:show="replace">Scientific
+        American</jump> in 1999.In it he posited that while the World Wide Web 
+        has become largely readible to people, no consistent mechanism existed 
+        for being able to create associations between different types of data 
+        that could be used to make inferences. The ability to identify a block 
+        of data as being a "thing" of a certain type is crucial to being able to 
+        manipulate that thing. Thus, ultimately, the purpose of the semantic web 
+        (as he saw it) was to provide an architecture that would not only make 
+        it possible to objectify the web but to do so in a way that required 
+        relatively little human intervention.
+      </para>
+      <para>The original vision that Berners-Lee had of this Semantic web 
+        depended upon a standard that is still relatively obscure today, though 
+        it is growing in popularity. The Resource Description Framework 
+        language, or RDF, can seem fairly abstruse -- it's primary purpose is to
+        provide a framework for describing the associations between one or more 
+        resources on the web. A simple relationship, <term>equivalence</term> 
+        for instance, could be used to indicate that an XML element in one 
+        schema (such as a <element>lastname</element>) was equivalent to a 
+        <element>familyName</element> element in a different schema. By having 
+        this relationship clarified, it means that if a program could read 
+        <element>lastname</element> elements, they could work with 
+        <element>familyName</element> elements in the same way, even if the rest 
+        of the schema was very different.
+      </para>
+      <para>One consequence of such a relationship mechanism is that the 
+        disparate data stores can be used to aggregate and filter data in a much
+        more transparent fashion. Through such a system, for instance, you can 
+        create an aggregate bibliography of everything a person may have written
+        on the web, for instance, making it possible to build a comprehensive 
+        portfolio of their works in ways that would be almost impossible to do
+        on the web. It also makes patterns far more obvious, as an RDF-centric 
+        Internet tends to emphasize the relationships between entities, rather 
+        than the specific characteristics of the entities themselves.
+      </para>
+<!-- additional content -->
+    </body>
+  </page>
+</document>
+
+
+

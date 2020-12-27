@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<employee FullSecurity="1">
+  <name>John Doe</name>
+  <department>Widget Sales</department>
+  <phone>(555)555-5555<extension>2974</extension></phone>
+  <salary>62,000</salary>
+  <area>3</area>
+</employee>

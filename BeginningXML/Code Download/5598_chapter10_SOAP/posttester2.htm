@@ -1,0 +1,48 @@
+<html><head><title>POST Tester</title>
+<script language="JavaScript">
+function doPost()
+{
+    var xdDoc, xhHTTP, sXML
+
+    sXML = "<SOAP-ENV:Envelope xmlns:SOAP-ENV="
+    sXML = sXML + "'http://schemas.xmlsoap.org/soap/envelope/'>\n";
+    sXML = sXML + "  <SOAP-ENV:Body>\n";
+    sXML = sXML + "    <an:addNumbers"
+    sXML = sXML + " xmlns:an='http://www.sernaferna.com/soap/addNumbers/'>\n";
+    sXML = sXML + "      <an:numOne>";
+    sXML = sXML + numOne.value;
+    sXML = sXML + "</an:numOne>\n";
+    sXML = sXML + "      <an:numTwo>";
+    sXML = sXML + numTwo.value;
+    sXML = sXML + "</an:numTwo>\n";
+    sXML = sXML + "    </an:addNumbers>\n";
+    sXML = sXML + "  </SOAP-ENV:Body>\n";
+    sXML = sXML + "</SOAP-ENV:Envelope>";
+
+    xdDoc = new ActiveXObject("MSXML.DOMDocument");
+    xdDoc.loadXML(sXML);
+
+    xhHTTP = new ActiveXObject("MSXML2.XMLHTTP");
+    xhHTTP.open("POST", "http://localhost/SOAP/addNumbers3.asp", false);
+    xhHTTP.setRequestHeader("SOAPAction", "http://www.sernaferna.com/soap/addNumbers#addNumbers");
+    xhHTTP.send(xdDoc);
+
+    xdDoc = xhHTTP.responseXML;
+    if(xdDoc.documentElement.firstChild.firstChild.nodeName == "Fault")
+    {
+        alert("invalid numbers passed");
+    }
+    else
+    {
+        alert(xdDoc.documentElement.firstChild.firstChild.firstChild.text);
+    }
+}
+
+
+</script>
+</head>
+<body>
+<p>Number 1:<input id=numOne name=numOne></p>
+<p>Number 2:<input id=numTwo name=numTwo></p>
+<input type="button" value="POST" id=btnPost name=btnPost onclick="doPost()">
+</body></html>

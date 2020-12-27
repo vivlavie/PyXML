@@ -1,0 +1,38 @@
+<html>
+<head><title>DOM Demo</title>
+
+<script language="JavaScript">
+
+  var oDOM;
+  oDOM = new ActiveXObject("MSXML.DOMDocument");
+  oDOM.async = false;
+  oDOM.load("domtext.xml");
+
+  //our code will go here...
+  var oNode;
+  oNode = oDOM.documentElement;
+
+  var oText;
+  oText = oNode.firstChild;
+  oText.splitText(12);
+
+  var oBElement;
+  oBElement = oDOM.createElement("b");
+  oNode.insertBefore(oBElement, oNode.lastChild);
+
+  oText = oNode.lastChild;
+  oText.splitText(4);
+
+  oText = oNode.removeChild(oNode.childNodes.item(2));
+  oNode.childNodes.item(1).appendChild(oText);
+
+  alert(oNode.xml);
+
+
+</script>
+
+</head>
+<body>
+  <p>This page demos some of the DOM capabilities.</p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<regions>
+  <region>
+    <code>MA</code>
+    <name>Mid-Atlantic</name>
+    <phone>412-555-8000</phone>
+  </region>
+  <region>
+    <code>S</code>
+    <name>South</name>
+    <phone>704-555-1342</phone>
+  </region>
+  <region>
+    <code>W</code>
+    <name>West</name>
+    <phone>399-555-8080</phone>
+  </region>
+</regions>

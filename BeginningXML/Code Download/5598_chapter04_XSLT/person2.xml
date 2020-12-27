@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<person>
+  <name>
+    <given>John</given>
+    <family>Doe</family>
+  </name>
+</person>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<people>
+  <name first="John" middle="Fitzgerald Johansen" last="Doe"/>
+  <name first="Franklin" middle="D." last="Roosevelt"/>
+  <name first="Alfred" middle="E." last="Neuman"/>
+  <name first="John" middle="Q." last="Public"/>
+  <name first="Jane" middle="" last="Doe"/>
+</people>

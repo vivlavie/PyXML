@@ -1,0 +1,68 @@
+<?xml-stylesheet type="text/xsl" href="transformTable.xsl"?>
+<cssproperties>
+  <headers>
+    <header id="propName">Property Name</header>
+    <header id="propDesc">Property Description</header>
+    <header id="analog">HTML Analog</header>
+  </headers>
+  <properties>
+    <property>
+      <propName>table</propName>
+      <propDesc>Provides the containing element for a property</propDesc>
+      <analog>table</analog>
+    </property>
+    <property>
+      <propName>table-row</propName>
+      <propDesc>Creates a standard row for table cells</propDesc>
+      <analog>tr</analog>
+    </property>
+    <property>
+      <propName>table-header-group</propName>
+      <propDesc>Creates the head element that column header elements may be 
+                displayed in</propDesc>
+      <analog>thead</analog>
+    </property>
+    <property>
+      <propName>table-row-group</propName>
+      <propDesc>Creates the general body of the table, where all of the data is 
+                found.</propDesc>
+      <analog>tbody</analog>
+    </property>
+    <property>
+      <propName>table-footer-group</propName>
+      <propDesc>Creates a footer for the table.</propDesc>
+      <analog>tfoot</analog>
+    </property>
+    <property>
+      <propName>table-column</propName>
+      <propDesc>Creates a specialized column element.</propDesc>
+      <analog>col</analog>
+    </property>
+    <property>
+      <propName>table-column-group</propName>
+      <propDesc>Creates a group of columns.</propDesc>
+      <analog>colgroup</analog>
+    </property>
+    <property>
+      <propName>table-cell</propName>
+      <propDesc>Creates a cell within a row.</propDesc>
+      <analog>td</analog>
+    </property>
+    <property>
+      <propName>table-cell</propName>
+      <propDesc>It can also create a cell in a table header or table 
+                footer.</propDesc>
+      <analog>th</analog>
+    </property>
+    <property>
+      <propName>table-caption</propName>
+      <propDesc>Creates a caption for the table.</propDesc>
+      <analog>caption</analog>
+    </property>
+  </properties>
+</cssproperties>
+
+
+
+
+

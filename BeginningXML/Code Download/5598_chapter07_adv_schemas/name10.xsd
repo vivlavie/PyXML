@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wrox.com/name" xmlns:target="http://www.wrox.com/name" elementFormDefault="qualified">
+  <!-- Global elements used for element substitution -->
+  <element name="name" type="target:NameType"/>
+  <element name="person" type="target:NameType" substitutionGroup="target:name"/>
+  <element name="ageName" type="target:ExtendedNameType" substitutionGroup="target:name"/>
+  <!-- Our NameType from our earlier examples -->
+  <complexType name="NameType">
+    <sequence>
+      <element name="first" type="string"/>
+      <element name="middle" type="string"/>
+      <element name="last" type="string"/>
+    </sequence>
+    <attribute name="title" type="string"/>
+  </complexType>
+  <!-- The new ExtendedNameType that inherits from NameType -->
+  <complexType name="ExtendedNameType">
+    <complexContent>
+      <extension base="target:NameType">
+        <sequence>
+          <element name="age" type="positiveInteger"/>
+          <element name="birthdate" type="dateTime"/>
+        </sequence>
+        <attribute name="gender" type="string"/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!-- We will use the names element as the root in our instance document -->
+  <element name="names">
+    <complexType>
+      <sequence>
+        <!-- We declare our name element using a reference to a global declaration -->
+        <element ref="target:name" maxOccurs="unbounded"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>
+

@@ -1,0 +1,37 @@
+<html><head><title>POST Tester</title>
+<script language="JavaScript">
+function doPost()
+{
+    var xdDoc, xhHTTP, sXML
+
+    sXML = "<addNumbers><numOne>";
+    sXML += numOne.value;
+    sXML += "</numOne><numTwo>"
+    sXML += numTwo.value;
+    sXML += "</numTwo></addNumbers>"
+
+    xdDoc = new ActiveXObject("MSXML.DOMDocument");
+    xdDoc.loadXML(sXML);
+
+    xhHTTP = new ActiveXObject("MSXML2.XMLHTTP");
+    xhHTTP.open("POST", "http://localhost/SOAP/addNumbers2.asp", false);
+    xhHTTP.setRequestHeader("SOAPAction", "addNumbers");
+    xhHTTP.send(xdDoc);
+
+    xdDoc = xhHTTP.responseXML;
+    if(xdDoc.documentElement.nodeName == "Error")
+    {
+        alert("invalid numbers passed");
+    }
+    else
+    {
+        alert(xdDoc.selectSingleNode("/addNumbers/result").text);
+    }
+}
+</script>
+</head>
+<body>
+<p>Number 1:<input id=numOne name=numOne></p>
+<p>Number 2:<INPUT id=numTwo name=numTwo></p>
+<input type="button" value="POST" id=btnPost name=btnPost onclick="doPost()">
+</body></html>

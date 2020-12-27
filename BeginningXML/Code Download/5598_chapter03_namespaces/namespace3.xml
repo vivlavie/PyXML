@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<person xmlns="http://sernaferna.com/pers">
+  <name>
+    <title>Sir</title>
+    <first>John</first>
+    <middle>Fitzgerald Johansen</middle>
+    <last>Doe</last>
+  </name>
+  <position>Vice President of Marketing</position>
+  <résumé>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+      <head><title>Resume of John Doe</title></head>
+      <body>
+      <h1>John Doe</h1>
+      <p>John's a great guy, you know?</p>
+      </body>
+    </html>
+  </résumé>
+</person>

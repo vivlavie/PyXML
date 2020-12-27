@@ -1,0 +1,22 @@
+<html>
+<head><title>DOM Demo</title>
+
+<script language="JavaScript">
+
+var oDOM;
+oDOM = new ActiveXObject("MSXML.DOMDocument");
+oDOM.async = false;
+oDOM.load("domnode.xml");
+
+//our code will go here...
+var oMainNode;
+oMainNode = oDOM.documentElement.firstChild;
+alert(oMainNode.nodeValue);
+
+</script>
+
+</head>
+<body>
+  <p>This page demos some of the DOM capabilities.</p>
+</body>
+</html>

@@ -1,0 +1,57 @@
+document {display:block;}
+page { display:block;
+       font-family:Arial;
+       margin:0.5in;
+       width:400px
+     }
+banner { display:block;
+         position:absolute;
+         left:0;
+         top:0;
+         width:100%;
+         height:0.35in;
+         background-color:navy;
+         color:white;
+         font-family:Brush Script,Fantasy;
+         font-size:16pt;
+       }
+header title{ width:400px;
+              color:navy;
+              padding:5px;
+              font-family:Brush Script,Fantasy;
+              font-size:32pt;
+              display:block;
+            }
+header author{ color:navy;
+               padding:5px;
+               font-family:Brush Script,Fantasy;
+               font-size:18pt;
+               display:block;
+             }
+header author:before {content:"by "}
+body {font-family:Times New Roman,Times,serif; display:block;}
+para {display:block;margin-bottom:1%;}   
+jump {display:inline; font-size:110%;}
+jump:link {color:blue;}
+jump:hover {color:red;}
+jump:visited {color:navy;}
+element { display:inline;
+          font-family:Courier New,courier,fixed;
+          font-size:10pt;}
+element:before {content:"\003C"}
+element:after {content:"\003E"}
+note { font-family:Arial,Helvetica;
+       margin-left:0.34in;
+       display:block;
+       margin-bottom:2%;
+       font-size:9pt;}
+note:before {content:url("pointer.gif") "Note:"}
+note:first-line {margin-left:-0.34in;}
+primaryLink {display:none;}   
+
+
+
+</document>
+
+
+

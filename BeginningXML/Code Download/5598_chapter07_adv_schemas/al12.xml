@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<catalog
+  xmlns="http://www.wrox.com/catalog"
+  xmlns:n="http://www.wrox.com/name"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.wrox.com/catalog al12.xsd"
+  version="1.0" name="My Music Library">
+   <CD>
+      <artist title="Mr.">
+        <n:first>Alfred</n:first>
+        <n:middle>Matthew</n:middle>
+        <n:last>Yankovic</n:last>
+      </artist>
+      <title>Dare to be Stupid</title>
+      <genre>parody</genre>
+      <date-released>1985-06</date-released>
+      <song>
+         <title>Like A Surgeon</title>
+         <length>
+            <minutes>3</minutes>
+            <seconds>33</seconds>
+         </length>
+         <parody>
+            <title>Like A Virgin</title>
+            <artist title="Mrs.">
+              <n:first>Madonna</n:first>
+              <n:middle></n:middle>
+              <n:last></n:last>
+            </artist>
+         </parody>
+         <lyrics></lyrics>
+      </song>
+      <song>
+         <title>Dare to be Stupid</title>
+         <length>
+            <minutes>3</minutes>
+            <seconds>25</seconds>
+         </length>
+         <parody></parody>
+         <lyrics></lyrics>
+      </song>
+   </CD>
+</catalog>
+

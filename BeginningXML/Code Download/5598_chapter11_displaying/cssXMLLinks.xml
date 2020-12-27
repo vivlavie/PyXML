@@ -1,0 +1,17 @@
+<document xmlns:xlink="http://www.w3.org/1999/xlink">
+  <heading>
+    <title>Cascading Style Sheets</title>
+    <subtitle>Information about the CSS Specification</subtitle>
+  </heading>
+  <content>
+    <para>You can find the most up-to-date specifications about CSS at the CSS 
+          subweb of the W3C site, specifically at 
+          <link xlink:href="http://www.w3.org/Style/CSS/" xlink:type="simple" 
+          xlink:show="replace">http://www.w3.org/Style/CSS/</link>
+          .This not only includes the full recommendations, but also benchmark 
+          tests and other CSS resources.
+    </para>
+    <rule/>
+  </content>
+</document>
+

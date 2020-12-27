@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE name PUBLIC "-//Wrox Press//DTD Name example from Chapter 1//EN" "name4.dtd">
+<name>
+   <first>John</first>
+   <middle>Fitzgerald</middle>
+   <last>Doe</last>
+</name>

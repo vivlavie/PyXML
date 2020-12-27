@@ -1,0 +1,43 @@
+<PartNumber xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:op="http://sernaferna.com/OrderProcessingSystem"
+            xlink:type="extended">
+  <item xlink:type="resource"
+        xlink:role="op:item"
+        xlink:title="Item">
+    <part-number>E16-25A</part-number>
+    <description>Production-Class Widget</description>
+  </item>
+  <salesperson xlink:type="locator"
+               xlink:href="http://sernaferna.com/order256.xml#xpointer(/order/name)"
+               xlink:role="op:salesperson"
+               xlink:title="Salesperson"/>
+
+  <order xlink:type="locator"
+         xlink:href="http://sernaferna.com/order256.xml"
+         xlink:role="op:order"
+         xlink:title="Order"/>
+  <GetOrder xlink:type="arc"
+            xlink:from="op:salesperson"
+            xlink:to="op:order"
+            xlink:show="replace"
+            xlink:actuate="onRequest"
+            xlink:role="op:GetOrder"
+            xlink:title="Last order processed."/>
+  <GetSalesperson xlink:type="arc"
+                  xlink:from="op:order"
+                  xlink:to="op:salesperson"
+                  xlink:show="replace"
+                  xlink:actuate="onRequest"
+                  xlink:role="op:GetSalesperson"
+                  xlink:title="Salesperson's name"/>
+  <GetItemOrder xlink:type="arc"
+                xlink:from="op:item"
+                xlink:to="op:order"
+                xlink:show="new"
+                xlink:actuate="onRequest"
+                xlink:role="op:GetItemOrder"
+                xlink:title="Last order placed for this item"/>
+</PartNumber>
+
+
+

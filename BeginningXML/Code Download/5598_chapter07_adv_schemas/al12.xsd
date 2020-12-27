@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.wrox.com/catalog"
+  xmlns:target="http://www.wrox.com/catalog"
+  xmlns:name="http://www.wrox.com/name"
+  elementFormDefault="qualified">
+
+ <!-- Notice that we use a full file URL here -->
+ <import namespace="http://www.wrox.com/name" schemaLocation="file:///c:/wrox/name10.xsd" />
+
+ <attributeGroup name="NameAttGroup">
+   <attribute name="name" type="string" use="required"/>
+ </attributeGroup>
+ 
+ <element name="catalog">
+   <complexType>
+     <choice maxOccurs="unbounded">
+       <element name="CD">
+         <complexType>
+           <group ref="target:AlbumGroup"/>
+         </complexType>
+       </element>
+       <element name="cassette">
+         <complexType>
+           <group ref="target:AlbumGroup"/>
+         </complexType>
+       </element>
+       <element name="record">
+         <complexType>
+           <group ref="target:AlbumGroup"/>
+         </complexType>
+       </element>
+       <element name="MP3">
+         <complexType>
+           <group ref="target:AlbumGroup"/>
+         </complexType>
+       </element>
+     </choice>
+     <attribute name="version" type="float" fixed="1.0"/>
+     <attributeGroup ref="target:NameAttGroup"/>
+   </complexType>
+ </element>
+
+ <group name="AlbumGroup">
+   <sequence>
+     <!-- We use the imported NameType for the artist element -->
+     <element name="artist" type="name:NameType"/>
+     <element name="title" type="normalizedString"/>
+     <element name="genre" type="token"/>
+     <element name="date-released" type="gYearMonth"/>
+     <element name="song" type="target:SongType" maxOccurs="unbounded"/>
+   </sequence>
+ </group>
+
+ <complexType name="SongType">
+   <sequence>
+     <element name="title" type="normalizedString"/>
+     <element name="length" type="target:LengthType"/>
+     <element name="parody" type="target:ParodyType"/>
+     <element name="lyrics" type="string"/>
+   </sequence>
+ </complexType>
+
+ <complexType name="LengthType">
+   <sequence>
+     <element name="minutes" type="nonNegativeInteger"/>
+     <element name="seconds">
+       <simpleType>
+         <restriction base="nonNegativeInteger">
+           <maxInclusive value="59"/>
+         </restriction>
+       </simpleType>
+     </element>
+   </sequence>
+ </complexType>
+
+ <complexType name="ParodyType">
+   <sequence minOccurs="0">
+     <element name="title" type="normalizedString"/>
+     <!-- We use the imported NameType for the artist element -->
+     <element name="artist" type="name:NameType"/>
+   </sequence>
+ </complexType>
+
+</schema>
+

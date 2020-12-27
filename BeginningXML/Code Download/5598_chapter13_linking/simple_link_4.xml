@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<person xmlns:xlink="http://www.w3.org/1999/xlink">
+  <name xlink:type="simple"
+        xlink:href="name.xml"
+        xlink:actuate="onLoad"
+        xlink:show="embed"/>
+  <picture xlink:type="simple"
+           xlink:href="picture.jpg"
+           xlink:actuate="onRequest"
+           xlink:show="embed"
+           xlink:title="Click to see picture!">
+    Click here to see a picture!
+  </picture>
+  <homepage xlink:type="simple"
+            xlink:href="http://www.sernaferna.com/homepages/persona1.htm"
+            xlink:actuate="onRequest"
+            xlink:show="replace">
+    Click here for the homepage.
+  </homepage>
+</person>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<order number="312597">
+  <date>2000/1/1</date>
+  <customer id="216A">Customer A</customer>
+  <item>
+    <part-number warehouse="Warehouse 11">E16-25A</part-number>
+    <description>Production-Class Widget</description>
+    <quantity>16</quantity>
+  </item>
+</order>

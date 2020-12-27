@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="regions.xsl"?>
+<stores>
+  <store>
+    <name>Willie's Market</name>
+    <manager>Willie Dewit</manager>
+    <region>S</region>
+  </store>
+  <store>
+    <name>The Country Store</name>
+    <manager>Jessica Long</manager>
+    <region>W</region>
+  </store>
+  <store>
+    <name>L'Apelier</name>
+    <manager>Ray Budd</manager>
+    <region>MA</region>
+  </store>
+</stores>

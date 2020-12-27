@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<catalog
+  xmlns="http://www.wrox.com/catalog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.wrox.com/catalog al9.xsd"
+  version="1.0" name="My Music Library">
+   <CD>
+      <artist>"Weird Al" Yankovic</artist>
+      <title>Dare to be Stupid</title>
+      <genre>parody</genre>
+      <date-released>1990</date-released>
+      <song>
+         <title>Like A Surgeon</title>
+         <length>
+            <minutes>3</minutes>
+            <seconds>33</seconds>
+         </length>
+         <parody>
+            <title>Like A Virgin</title>
+            <artist>Madonna</artist>
+         </parody>
+         <lyrics></lyrics>
+      </song>
+      <song>
+         <title>Dare to be Stupid</title>
+         <length>
+            <minutes>3</minutes>
+            <seconds>25</seconds>
+         </length>
+         <parody></parody>
+         <lyrics></lyrics>
+      </song>
+   </CD>
+</catalog>
+

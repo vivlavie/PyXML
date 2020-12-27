@@ -1,0 +1,45 @@
+<stylesheets>
+  <style id="blue">//<![CDATA[
+    .cssproperties {table;border:inset 3px black;}
+    .headers {display:table-header-group;}
+    .header { display:table-cell;
+              padding:5px;
+              background-color:navy;
+              color:white;
+              font-weight:bold;
+              border:outset 2px black;
+             }
+    .properties {display:table-row-group}
+    .property {display:table-row;}
+    .propName {display:table-cell;padding:5px;}
+    .propDesc {display:table-cell;padding:5px;}
+    .analog {display:table-cell;}
+    .row0 {background-color:lightBlue;}
+    .row1 {background-color:white;}
+  //]]></style>
+
+  <style id="red">//<![CDATA[
+    .cssproperties {table;border:inset 3px red;}
+    .headers {display:table-header-group;}
+    .header { display:table-cell;
+              padding:5px;
+              background-color:maroon;
+              color:white;
+              font-weight:bold;
+              border:outset 2px black;
+            }
+    .properties {display:table-row-group}
+    .property {display:table-row;}
+    .propName {display:table-cell;padding:5px;}
+    .propDesc {display:table-cell;padding:5px;}
+    .analog {display:table-cell;}
+    .row0 {background-color:orange;}
+    .row1 {background-color:white;}
+  //]]></style>
+</stylesheets>
+
+
+
+
+
+

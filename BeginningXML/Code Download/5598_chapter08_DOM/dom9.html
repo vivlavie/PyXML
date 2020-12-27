@@ -1,0 +1,25 @@
+<html>
+<head><TITLE>DOM Demo</title>
+
+<script language="JavaScript">
+
+var oDOM;
+oDOM = new ActiveXObject("MSXML.DOMDocument");
+oDOM.async = false;
+oDOM.load("domnode.xml");
+
+//our code will go here...
+var oNode, oRemovedNode;
+oNode = oDOM.documentElement.firstChild;
+oRemovedNode = oNode.removeChild(oNode.firstChild);
+alert(oRemovedNode.nodeValue);
+alert(oDOM.xml);
+
+
+</script>
+
+</head>
+<body>
+  <p>This page demos some of the DOM capabilities.</p>
+</body>
+</html>

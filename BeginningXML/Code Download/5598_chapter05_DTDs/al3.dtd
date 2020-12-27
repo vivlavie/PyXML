@@ -1,0 +1,21 @@
+<!ELEMENT catalog (CD | cassette | record | MP3)*>
+<!ATTLIST catalog version CDATA #FIXED "1.0"
+          name CDATA #IMPLIED >
+<!ELEMENT CD (artist, title, genre, date-released, song+)>
+<!ELEMENT cassette (artist, title, genre, date-released, song+)>
+<!ELEMENT record (artist, title, genre, date-released, song+)>
+<!ELEMENT MP3 (artist, title, genre, date-released, song+)>
+<!ATTLIST CD images ENTITIES #IMPLIED>
+<!ATTLIST cassette images ENTITIES #IMPLIED>
+<!ATTLIST record images ENTITIES #IMPLIED>
+<!ATTLIST MP3 images ENTITIES #IMPLIED>
+<!ELEMENT artist (#PCDATA)>
+<!ATTLIST artist gender (male | female) "male">
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT date-released (#PCDATA)>
+<!ELEMENT song (title, length, parody)>
+<!ELEMENT length (minutes, seconds)>
+<!ELEMENT minutes (#PCDATA)>
+<!ELEMENT seconds (#PCDATA)>
+<!ELEMENT parody (title, artist)?>

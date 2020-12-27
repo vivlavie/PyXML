@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<people>
+  <name>
+    <first>John</first>
+    <middle>Fitzgerald Johansen</middle>
+    <last>Doe</last>
+  </name>
+  <name>
+    <first>Franklin</first>
+    <middle>D.</middle>
+    <last>Roosevelt</last>
+  </name>
+  <name>
+    <first>Alfred</first>
+    <middle>E.</middle>
+    <last>Neuman</last>
+  </name>
+  <name>
+    <first>John</first>
+    <middle>Q.</middle>
+    <last>Public</last>
+  </name>
+  <name>
+    <first>Jane</first>
+    <middle></middle>
+    <last>Doe</last>
+  </name>
+</people>

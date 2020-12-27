@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<order>
+  <name>
+    <first>John</first>
+    <middle/>
+    <last>Doe</last>
+  </name>
+  <item>Production-Class Widget</item>
+  <quantity>16</quantity>
+  <date>
+    <m>1</m>
+    <d>1</d>
+    <y>2000</y>
+  </date>
+  <customer>Sally Finkelstein</customer>
+</order>
+
+

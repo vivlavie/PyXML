@@ -1,0 +1,14 @@
+<!ELEMENT catalog (CD | cassette | record | MP3)*>
+<!ELEMENT CD (artist, title, genre, date-released, song+)>
+<!ELEMENT cassette (artist, title, genre, date-released, song+)>
+<!ELEMENT record (artist, title, genre, date-released, song+)>
+<!ELEMENT MP3 (artist, title, genre, date-released, song+)>
+<!ELEMENT artist (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT date-released (#PCDATA)>
+<!ELEMENT song (title, length, parody)>
+<!ELEMENT length (minutes, seconds)>
+<!ELEMENT minutes (#PCDATA)>
+<!ELEMENT seconds (#PCDATA)>
+<!ELEMENT parody (title, artist)?>

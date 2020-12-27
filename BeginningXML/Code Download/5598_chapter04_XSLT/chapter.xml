@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<chapter>
+  <title>XSLT</title>
+  <section>What is XSL?
+    <paragraph><important>Extensible Stylesheet Language</important>, as the name implies, is an XML-based language used to create <important>stylesheets</important>.  An XSL engine uses these stylesheets to...</paragraph>
+    <paragraph>There are actually two...</paragraph>
+  </section>
+  <section>Why is XSLT So Important for E-Commerce?
+    <paragraph>To get an idea of the power of XSLT...</paragraph>
+    <paragraph>Unfortunately, the chances are...</paragraph>
+  </section>
+</chapter>

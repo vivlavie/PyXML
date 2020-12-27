@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<person xmlns:xlink="http://www.w3.org/1999/xlink">
+  <name>???</name>
+  <picture xlink:type="simple"
+           xlink:href="picture.jpg"
+           xlink:actuate="onRequest"
+           xlink:show="embed"
+           xlink:title="Click to see picture!">
+    Click here to see a picture!
+  </picture>
+  <homepage>???</homepage>
+</person>

@@ -1,0 +1,34 @@
+<html>
+<head><title>DOM Demo</title>
+
+<script language="JavaScript">
+
+var oDOM;
+oDOM = new ActiveXObject("MSXML.DOMDocument");
+
+
+//our code will go here...
+var oNode, oText;
+oNode = oDOM.createElement("root");
+oText = oDOM.createTextNode("root PCDATA");
+oDOM.appendChild(oNode);
+oNode.appendChild(oText);
+
+var oAttr;
+oAttr = oDOM.createAttribute("id");
+
+//set the attribute's value
+oAttr.nodeValue = "123";
+
+//append the attribute to the element
+oNode.attributes.setNamedItem(oAttr);
+
+alert(oDOM.xml);
+
+</script>
+
+</head>
+<body>
+  <p>This page demos some of the DOM capabilities.</p>
+</body>
+</html>

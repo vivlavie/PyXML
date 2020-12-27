@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="CompanyB.css" ?>
+<order>
+<date>2000/1/13</date>
+<customer>Company A</customer>
+<item>
+<part-number>E16-25A</part-number>
+<description>Production-Class Widget</description>
+<quantity>16</quantity>
+</item>
+</order>

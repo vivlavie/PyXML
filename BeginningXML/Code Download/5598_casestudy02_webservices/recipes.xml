@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="showrecipes.xsl"?>
+<!-- Cookbook XML Case Study -->
+<cookbook xmlns='http://www.wrox.com/recipes/'>
+  <recipes>
+    <recipe>
+      <name>Peanut Butter and Jelly Sandwiches</name>
+      <author>Calvin Dix</author>
+      <ingredients>
+        <ingredient>peanut butter</ingredient>
+        <ingredient>jelly</ingredient>
+        <ingredient>bread</ingredient>
+      </ingredients>
+      <directions>
+        <direction>Take two slices of bread.</direction>
+        <direction>Using a knife, apply peanut butter to the first slice.</direction>
+        <direction>Apply jelly to the second slice.</direction>
+        <direction>Put the slices together.</direction>
+      </directions>
+    </recipe>
+    <recipe>
+      <name>Macaroni and Cheese</name>
+      <author>Alexander Dix</author>
+      <ingredients>
+        <ingredient>macaroni</ingredient>
+        <ingredient>cheese packet</ingredient>
+      </ingredients>
+      <directions>
+        <direction>Boil water.</direction>
+        <direction>Place the macaroni into the boiling water.</direction>
+        <direction>Stir the macaroni for 5 minutes.</direction>
+        <direction>Drain all the water from the macaroni.</direction>
+        <direction>Mix in the cheese packet.</direction>
+      </directions>
+    </recipe>
+    <recipe>
+      <name>Hard Boiled Eggs</name>
+      <author>Jennifer Dix</author>
+      <ingredients>
+        <ingredient>eggs</ingredient>
+      </ingredients>
+      <directions>
+        <direction>Boil water.</direction>
+        <direction>Place the egg(s) into the boiling water for 5 minutes.</direction>
+        <direction>Reduce heat to low and leave eggs in water for 15 minutes.</direction>
+        <direction>Empty the water and replace it with cold water.</direction>
+        <direction>Leave the eggs in the water for 5 minutes.</direction>
+        <direction>Place eggs in the refrigerator to cool.</direction>
+      </directions>
+    </recipe>
+  </recipes>
+</cookbook>

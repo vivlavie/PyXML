@@ -1,0 +1,30 @@
+cssproperties {display:table;border:inset 3px black;}
+headers {display:table-header-group;}
+header { display:table-cell;
+         padding:5px;
+         background-color:navy;
+         color:white;
+         font-weight:bold;
+         border:outset 2px black;
+       }
+properties {display:table-row-group}
+property {display:table-row;}
+propName { display:table-cell;
+           padding:5px;
+           border-bottom:solid 1px lightGray;
+         }
+propDesc { display:table-cell;
+           padding:5px;
+           border-bottom:solid 1px lightGray;
+         }
+analog { display:table-cell;
+         border-bottom:solid 1px lightGray;
+       }
+analog:before {content:"\003C"}
+analog:after {content:"\003E"}
+
+
+
+
+
+

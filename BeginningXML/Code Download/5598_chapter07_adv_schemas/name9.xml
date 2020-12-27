@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<names
+  xmlns="http://www.wrox.com/name"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.wrox.com/name name9.xsd">
+  <name title="Mr.">
+    <first>John</first>
+    <middle>Fitzgerald</middle>
+    <last>Doe</last>
+  </name>
+  <name title="Mr." gender="male" xsi:type="ExtendedNameType">
+    <first>Weird</first>
+    <middle>Al</middle>
+    <last>Yankovic</last>
+    <age>41</age>
+    <birthdate>1959-10-23T13:56:00.000-08:00</birthdate>
+  </name>
+  <name title="Mrs." xsi:type="NameType">
+    <first>Jane</first>
+    <middle></middle>
+    <last>Doe</last>
+  </name>
+</names>
+

@@ -1,0 +1,11 @@
+<!ELEMENT bands (band*) >
+
+<!ELEMENT band (name, (guitar | organ), saxophone, bass, drums) >
+<!ATTLIST band type CDATA #REQUIRED >
+
+<!ELEMENT name      (#PCDATA) >
+<!ELEMENT guitar    (#PCDATA) >
+<!ELEMENT organ     (#PCDATA) >
+<!ELEMENT saxophone (#PCDATA) >
+<!ELEMENT bass      (#PCDATA) >
+<!ELEMENT drums     (#PCDATA) >

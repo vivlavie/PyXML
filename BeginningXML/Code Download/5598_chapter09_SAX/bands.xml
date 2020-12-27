@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<bands>
+    <band type="progressive">
+        <name>King Crimson</name>
+        <guitar>Robert Fripp</guitar>
+        <saxophone>Mel Collins</saxophone>
+        <bass>Boz</bass>
+        <drums>Ian Wallace</drums>
+    </band>
+    <band type="punk">
+        <name>X-Ray Spex</name>
+        <vocals>Poly Styrene</vocals>
+        <saxophone>Laura Logic</saxophone>
+        <guitar>Someone else</guitar>
+    </band>
+    <band type="classical">
+        <name>Hilliard Ensemble</name>
+        <saxophone>Jan Garbarek</saxophone>
+    </band>
+    <band type="progressive">
+        <name>Soft Machine</name>
+        <organ>Mike Ratledge</organ>
+        <bass>Hugh Hopper</bass>
+        <drums>Robert Wyatt</drums>
+        <saxophone>Elton Dean</saxophone>
+    </band>
+</bands>

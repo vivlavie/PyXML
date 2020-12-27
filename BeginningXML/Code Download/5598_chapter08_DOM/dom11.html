@@ -1,0 +1,32 @@
+<html>
+<head><title>DOM Demo</title>
+
+<script language="JavaScript">
+
+var oDOM;
+oDOM = new ActiveXObject("MSXML.DOMDocument");
+oDOM.async = false;
+oDOM.load("people.xml");
+
+//our code will go here...
+var oNodes, sNames, i;
+
+oNodes = oDOM.selectNodes("/people/programmers/name")
+sNames = new String();
+for(i = 0; i < oNodes.length - 1; i++)
+{
+	sNames = sNames + oNodes.item(i).firstChild.nodeValue;
+	sNames = sNames + ", ";
+}
+sNames = sNames + oNodes.item(i).firstChild.nodeValue;
+alert(sNames);
+
+
+alert(oDOM.selectSingleNode("/people/managers/name[1]").firstChild.nodeValue);
+</script>
+
+</head>
+<body>
+  <p>This page demos some of the DOM capabilities.</p>
+</body>
+</html>
